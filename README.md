@@ -2,7 +2,7 @@
 
 想定読者はプログラミング未経験だが、これからエンジニアとして研究・開発のアルバイトや仕事をスタートしようとしている人（理系学部生など）。最短で開発に参加するための基礎トレーニングするのを目標にする（50時間くらいを想定）。
 
-## 開発に参加するにあたって出来てほしいこと一覧
+## :white_check_mark: 目標
 
 <details>
 <summary>基本的なUnixコマンドが使える</summary>
@@ -75,24 +75,16 @@
 - CIを設定できる
 </details>
 
-#### Optional
+## :pencil: トレーニングコース
 
-<details>
-<summary>再現性のある環境で開発ができる (Docker)</summary>
-
-- 用意されたDockerコンテナを利用できる
-- Dockerfileを自前で用意できる
-</details>
-
-## トレーニングコース
-
-1. Unixコマンド
-2. 動的型付け言語 (Python)
-3. 静的型付け言語（C++）
-4. 簡単な処理・データ構造・アルゴリズム
-5. Gitをつかったソフトウェアのバージョン管理
-6. 単体テストの書き方 (Python)
-7. GitHubを使った開発
-8. 総合演習
-    - Pythonを使ったパッケージ・CLIコマンド開発
-    - Pythonで簡易ニューラルネットワーク開発
+ 1. [Unixコマンド](./docs/unix_command.md)
+ 2. [Python文法・演習](./docs/python.md)
+ 3. [Gitをつかったソフトウェアのバージョン管理](./docs/git.md)
+ 4. [GitHubを使った開発](./docs/github.md)
+ 5. [Pythonにおける単体テストの書き方](./docs/python_unittest.md)
+ 6. [Python総合演習](./docs/python_practice.md)
+     - Pythonを使ったパッケージ・CLIコマンド開発
+     - Pythonで簡易ニューラルネットワーク開発
+ 7. [C++文法・演習](./docs/cpp.md)
+ 8. [C++総合演習](./docs/cpp_practice.md)
+ 9. [Docker入門](./docs/docker.md)
