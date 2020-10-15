@@ -88,7 +88,7 @@
 
  1. [Unixコマンド](./docs/unix_command.md)
  2. [Python文法・演習](./docs/python.md)
- 3. [Gitをつかったソフトウェアのバージョン管理](./docs/03_git.md)
+ 3. [Gitをつかったソフトウェアのバージョン管理](./docs/git.md)
  4. [GitHubを使った開発](./docs/github.md)
  5. [Pythonにおける単体テストの書き方](./docs/python_unittest.md)
  6. [Python総合演習](./docs/python_practice.md)
