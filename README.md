@@ -2,7 +2,7 @@
 
 想定読者はプログラミング未経験だが、これからエンジニアとして研究・開発のアルバイトや仕事をスタートしようとしている人（理系学部生など）。最短で開発に参加するための基礎トレーニングするのを目標にする（50時間くらいを想定）。
 
-## 目標
+## :white_check_mark: 目標
 
 <details>
 <summary>基本的なUnixコマンドが使える</summary>
@@ -75,16 +75,7 @@
 - CIを設定できる
 </details>
 
-#### Optional
-
-<details>
-<summary>再現性のある環境で開発ができる (Docker)</summary>
-
-- 用意されたDockerコンテナを利用できる
-- Dockerfileを自前で用意できる
-</details>
-
-## トレーニングコース
+## :pencil: トレーニングコース
 
  1. [Unixコマンド](./docs/unix_command.md)
  2. [Python文法・演習](./docs/python.md)
