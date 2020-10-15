@@ -86,15 +86,14 @@
 
 ## トレーニングコース
 
- 1. [Unixコマンド](./docs/01_unix_command.md)
- 2. [Python文法](./docs/02_python.md)
- 3. [Pythonにおける制御構文・データ構造の演習](./docs/03_python_quiz.md)
- 4. [Gitをつかったソフトウェアのバージョン管理](./docs/04_git.md)
- 5. [GitHubを使った開発](./docs/05_github.md)
- 6. [Pythonにおける単体テストの書き方](./docs/06_python_unittest.md)
- 7. [Python総合演習](./docs/07_python_practice.md)
+ 1. [Unixコマンド](./docs/unix_command.md)
+ 2. [Python文法・演習](./docs/python.md)
+ 3. [Gitをつかったソフトウェアのバージョン管理](./docs/03_git.md)
+ 4. [GitHubを使った開発](./docs/github.md)
+ 5. [Pythonにおける単体テストの書き方](./docs/python_unittest.md)
+ 6. [Python総合演習](./docs/python_practice.md)
      - Pythonを使ったパッケージ・CLIコマンド開発
      - Pythonで簡易ニューラルネットワーク開発
- 8. [C++文法](./docs/08_cpp.md)
- 9. [C++における制御構文・データ構造の演習](./docs/09_cpp_quiz.md)
-10. [C++総合演習](./docs/10_cpp_practice.md)
+ 7. [C++文法・演習](./docs/cpp.md)
+ 8. [C++総合演習](./docs/cpp_practice.md)
+ 9. [Docker入門](./docs/docker.md)
