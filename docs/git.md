@@ -13,7 +13,9 @@ AppleStoreに行けば、すべてのアプリケーションはバージョン�
 **Git**は現在もっとも多く使われているバージョンコントロールシステムです。
 ここでは、Gitの使い方を学ぶことで、チームで協力して開発するための準備をします。
 
-<div style="text-align:center"><img src="/assets/version.png" width=600 /></div>
+| <div style="text-align:center"><img src="/assets/version.png" width=400 /></div> | <div style="text-align:center"><img src="/assets/git.png" width=400 /></div> |
+|:---:|:---:|
+| AppleStoreにおけるアプリケーションのバージョン | Gitのソースコード自体もGitで管理されています github.com/git/git  |
 
 ## :desktop_computer: 事前準備（環境設定）
 
