@@ -1,13 +1,13 @@
 # Python総合演習
 
-## :pencil: Pythonを使ったパッケージ・CLIコマンド開発
+## Pythonを使ったパッケージ・CLIコマンド開発
 
 こちらの教材の内容を再構築して、Python開発の手順を学びましょう。
 
 [github.com/sotetsuk/python-dev-tutorial](https://github.com/sotetsuk/python-dev-tutorial)
 
 
-## :pencil: Pythonで簡易ニューラルネットワーク開発
+## Pythonで簡易ニューラルネットワーク開発
 人工知能技術の発展は目覚ましく、ニューラルネットワークの仕組みを理解することも、現代エンジニアにとってある種の必修科目となりつつあります。簡略化されたニューラルネットワークライブラリを自作してみて、その中身を知りましょう。
 
 

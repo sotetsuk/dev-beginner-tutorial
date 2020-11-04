@@ -20,7 +20,7 @@ PythonはWebサービスの開発においても人気の高い言語の一つ�
 
 
 
-## :desktop_computer: 事前準備（環境設定）
+## 事前準備（環境設定）
 
 Pythonを開発・実行する環境としては、ローカルマシン（自分の手元のPC）に加えて、サーバ上の[Jupyter Notebook](https://jupyter.org/)形式を選択することもできます。必要に応じてローカルマシン使い分けてみましょう。
 
@@ -35,7 +35,7 @@ Pythonを開発・実行する環境としては、ローカルマシン（自�
 - モダンなPython開発環境としては、他にも[Visual Studio Code](https://code.visualstudio.com/)も選択肢に入りますが、特に設定せず最初から便利なPyCharmが初学者にはオススメです。
 - WindowsではUnixコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
 
-## :blue_book: 学習教材
+## 学習教材
 
 次の教材から好きなものを選んでPythonの文法とプログラミングの基礎について勉強しましょう。**2.3.4.のどれか一つ**選択して学習してみましょう。
 
@@ -48,7 +48,7 @@ Pythonを開発・実行する環境としては、ローカルマシン（自�
 4. [Introduction to Computer Science and Programming in Python | MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
     - 英語が問題ない方はこちらがオススメです。より本格的なコンピュータサイエンス入門になっています。
 
-## :pencil: 演習
+## 演習
 
 基本的な文法やデータ構造 (`if`, `for`, `while`, `list`, `dict`, `set`, ...) が使いこなせるか確認しましょう。
 
