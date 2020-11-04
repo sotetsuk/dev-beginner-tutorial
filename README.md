@@ -58,7 +58,7 @@
 <details>
 <summary>ソフトウェアのバージョン管理ができる (Git/GitHub)</summary>
 
-- `git checkout`
+- `git checkout (switch/restore)`
 - `git add`
 - `git commit`
 - `git push`
@@ -69,7 +69,7 @@
 </details>
 
 <details>
-<summary>単体テストを書いて開発ができる</summary>
+<summary>単体テストを書いて開発を進めることが出来る</summary>
 
 - 自分の使える言語で単体テストが書ける
 - CIを設定できる
@@ -81,10 +81,8 @@
  2. [Python文法・演習](./docs/python.md)
  3. [Gitをつかったソフトウェアのバージョン管理](./docs/git.md)
  4. [GitHubを使った開発](./docs/github.md)
- 5. [Pythonにおける単体テストの書き方](./docs/python_unittest.md)
  6. [Python総合演習](./docs/python_practice.md)
      - Pythonを使ったパッケージ・CLIコマンド開発
      - Pythonで簡易ニューラルネットワーク開発
  7. [C++文法・演習](./docs/cpp.md)
- 8. [C++総合演習](./docs/cpp_practice.md)
  9. [Docker入門](./docs/docker.md)
