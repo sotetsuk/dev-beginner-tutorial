@@ -1,4 +1,4 @@
-# Python文法・演習
+# Python入門
 
 ## :question: なぜPythonを学ぶのか
 
