@@ -1,26 +1,26 @@
 # Python文法・演習
 
+## :question: なぜPythonを学ぶのか
+
 様々なプログラミング言語がありますが、**Python**は今最も学ぶ価値の高い言語の一つです。Pythonは人工知能やデータサイエンスとの相性が良く、学習コストも低いため、**最初に学習するプログラミング言語として最も優れている**と言って過言でありません。実際、マサチューセッツ工科大学 (MIT) では、コンピュータサイエンス入門コースでPythonを採用しています。学習コストが低いと言っても、Pythonの機能に何か制限があるというわけではなく、**最先端の人工知能研究からWebサービスの開発に至るまで**、様々な場面で最大限に活用できます。ここでは、Pythonの基本的な文法とプログラミングの基本を学びましょう。
 
-### Pythonと人工知能
+!!! info "Pythonと人工知能"
+    GitHubにおいて、"Machine learning"で検索をすると、**PythonとJupyter Notebookで書かれたリポジトリの数が、他を圧倒しています。**
+    もはや、Pythonは人工知能分野における共通言語と言っても過言ではありません。
 
-GitHubにおいて、"Machine learning"で検索をすると、**PythonとJupyter Notebookで書かれたリポジトリの数が、他を圧倒しています。**
-もはや、Pythonは人工知能分野における共通言語と言っても過言ではありません。
-
-<div style="text-align:center"><img src="/assets/ml-py.png" width=600 /></div>
-
-### Pythonを使っている有名なサービス一覧
-
-[10 Famous Websites Built Using Python](https://learn.onemonth.com/10-famous-websites-built-using-python/)
-
-PythonはWebサービスの開発においても人気の高い言語の一つです。多くの有名サービスがPythonをバックエンドで活用しています。
-人工知能技術の産業界への輸出がこれからも続くことを考えれば、この傾向は今後も続くと予想するのが自然でしょう。
-
-<div style="text-align:center"><img src="/assets/py-services.png" width=600 /></div>
+    ![ml-py](assets/ml-py.png)
 
 
+!!! example "Pythonを使っている有名なサービス例"
+    > [10 Famous Websites Built Using Python](https://learn.onemonth.com/10-famous-websites-built-using-python/)
 
-## 事前準備（環境設定）
+    PythonはWebサービスの開発においても人気の高い言語の一つです。多くの有名サービスがPythonをバックエンドで活用しています。
+    人工知能技術の産業界への輸出がこれからも続くことを考えれば、この傾向は今後も続くと予想するのが自然でしょう。
+
+    ![py-services](assets/py-services.png)
+
+
+## :computer: 事前準備（環境設定）
 
 Pythonを開発・実行する環境としては、ローカルマシン（自分の手元のPC）に加えて、サーバ上の[Jupyter Notebook](https://jupyter.org/)形式を選択することもできます。必要に応じてローカルマシン使い分けてみましょう。
 
@@ -35,7 +35,7 @@ Pythonを開発・実行する環境としては、ローカルマシン（自�
 - モダンなPython開発環境としては、他にも[Visual Studio Code](https://code.visualstudio.com/)も選択肢に入りますが、特に設定せず最初から便利なPyCharmが初学者にはオススメです。
 - WindowsではUnixコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
 
-## 学習教材
+## :orange_book: 学習教材
 
 次の教材から好きなものを選んでPythonの文法とプログラミングの基礎について勉強しましょう。**2.3.4.のどれか一つ**選択して学習してみましょう。
 
@@ -48,7 +48,7 @@ Pythonを開発・実行する環境としては、ローカルマシン（自�
 4. [Introduction to Computer Science and Programming in Python | MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
     - 英語が問題ない方はこちらがオススメです。より本格的なコンピュータサイエンス入門になっています。
 
-## 演習
+## :pencil: 演習
 
 基本的な文法やデータ構造 (`if`, `for`, `while`, `list`, `dict`, `set`, ...) が使いこなせるか確認しましょう。
 
