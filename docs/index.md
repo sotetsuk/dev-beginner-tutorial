@@ -4,7 +4,7 @@
 
 ## :golf: 目標
 
-!!! check "基本的なUnixコマンドが使える"
+!!! check "基本的なUNIXコマンドが使える"
 
     ls, cd, cp, mv, grep, curl, ssh, ...
 
@@ -30,7 +30,7 @@
 
 ## :muscle: トレーニングコース
 
- 1. [Unixコマンド入門](unix_command.md): Unixコマンドの基礎を学びます。
+ 1. [UNIXコマンド入門](unix_command.md): UNIXコマンドの基礎を学びます。
  2. [Python入門](python.md): Python文法と、プログラミングの基礎を学びます。
  3. [Git入門](git.md): Gitを用いたバージョンコントロールの仕方を学びます。
  4. [GitHub入門](github.md): GitHubを使ったチーム開発の慣習を学びます。

@@ -33,7 +33,7 @@ Pythonを開発・実行する環境としては、ローカルマシン（自�
 
 - なお、学習教材で2.の東大の教材を選択する場合は、ローカルマシンの環境構築は後回しにしても問題ありません。
 - モダンなPython開発環境としては、他にも[Visual Studio Code](https://code.visualstudio.com/)も選択肢に入りますが、特に設定せず最初から便利なPyCharmが初学者にはオススメです。
-- WindowsではUnixコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
+- WindowsではUNIXコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
 
 ## :orange_book: 学習教材
 

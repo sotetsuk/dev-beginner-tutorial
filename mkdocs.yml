@@ -7,7 +7,7 @@ repo_url: https://github.com/sotetsuk/dev-beginner-tutorial
 copyright: Copyright &copy 2020 Sotetsu KOYAMADA
 nav:
     - Home: index.md
-    - 1. Unixコマンド入門: unix_command.md
+    - 1. UNIXコマンド入門: unix_command.md
     - 2. Python入門: python.md
     - 3. Git入門: git.md
     - 4. GitHub入門: github.md
