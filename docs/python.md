@@ -17,7 +17,7 @@ Pythonを開発・実行する環境としては、ローカルマシン（自�
 - モダンなPython開発環境としては、他にも[Visual Studio Code](https://code.visualstudio.com/)も選択肢に入りますが、特に設定せず最初から便利なPyCharmが初学者にはオススメです。
 - WindowsではUnixコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
 
-## :blue_book: Python文法の学習
+## :blue_book: 学習教材
 
 次の教材から好きなものを選んでPythonの文法とプログラミングの基礎について勉強しましょう。**2.3.4.のどれか一つ**選択すれば十分です。
 

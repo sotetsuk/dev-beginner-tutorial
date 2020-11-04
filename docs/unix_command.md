@@ -31,7 +31,7 @@ WSLを通じてWindows上でUbuntuを使いましょう。
 
 Terminalアプリを起動できればOKです。
 
-## :blue_book: 学習コース
+## :blue_book: 学習教材
 どれか一つコースを選択してUnixコマンドの基本的な操作方法を学んでみましょう
 
 - [UNIXコマンド入門 | ドットインストール](https://dotinstall.com/lessons/basic_unix_v3)（有料だがオススメ）
