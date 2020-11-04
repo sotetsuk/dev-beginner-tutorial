@@ -1,7 +1,7 @@
 # Gitをつかったソフトウェアのバージョン管理
 
 ソフトウェア開発において、バージョン管理は必要不可欠です。
-AppleStoreに行けば、すべてのアプリケーションはバージョンが明示されています。
+例えば、App Storeに行けばアプリケーションのバージョンが明示されています。
 バージョン管理をすることで、
 
 1. 更新内容に説明を加える。
@@ -11,11 +11,22 @@ AppleStoreに行けば、すべてのアプリケーションはバージョン�
 
 といったことが可能になります。
 **Git**は現在もっとも多く使われているバージョンコントロールシステムです。
+2020年現在、プログラミング言語の選択肢は数多くあれど、バージョンコントロールシステムの選択肢はGitだけと言って過言ではありません。
 ここでは、Gitの使い方を学ぶことで、チームで協力して開発するための準備をします。
 
-| <div style="text-align:center"><img src="/assets/version.png" width=400 /></div> | <div style="text-align:center"><img src="/assets/git.png" width=400 /></div> |
-|:---:|:---:|
-| AppleStoreにおけるアプリケーションのバージョン | Gitのソースコード自体もGitで管理されています [github.com/git/git](https://github.com/git/git)  |
+### 身近なバージョン管理の例
+App Storeでは、アプリケーションのバージョンと、その更新内容が記述されています。
+
+<div style="text-align:center"><img src="/assets/version.png" width=600 /></div>
+
+
+### "GitのGitリポジトリ"
+
+[github.com/git/git](https://github.com/git/git)
+
+奇妙なようで当然のことですが、Gitのソースコード自体もGitを使って管理されていおり、2020年現在も更新され続けています。
+
+<div style="text-align:center"><img src="/assets/git.png" width=600 /></div>
 
 ## :desktop_computer: 事前準備（環境設定）
 
