@@ -30,10 +30,10 @@
 
 ## :muscle: トレーニングコース
 
- 1. [Unixコマンド](unix_command.md)
- 2. [Python文法・演習](python.md)
- 3. [Gitをつかったソフトウェアのバージョン管理](git.md)
- 4. [GitHubを使った開発](github.md)
- 6. [Python総合演習](python_practice.md)
- 7. [C++文法・演習](cpp.md)
- 8. [Docker入門](docker.md)
+ 1. [Unixコマンド入門](unix_command.md): Unixコマンドの基礎を学びます。
+ 2. [Python入門](python.md): Python文法と、プログラミングの基礎を学びます。
+ 3. [Git入門](git.md): Gitを用いたバージョンコントロールの仕方を学びます。
+ 4. [GitHub入門](github.md): GitHubを使ったチーム開発の慣習を学びます。
+ 6. [Python総合演習](python_practice.md): これまで学んだ知識を使ってPythonで開発を行います。
+ 7. [C++入門](cpp.md): C++の文法を学びます。
+ 8. [Docker入門](docker.md): コンテナの使い方を学びます。

@@ -7,13 +7,13 @@ repo_url: https://github.com/sotetsuk/dev-beginner-tutorial
 copyright: Copyright &copy 2020 Sotetsu KOYAMADA
 nav:
     - Home: index.md
-    - Unix command: unix_command.md
-    - Python: python.md
-    - Git: git.md
-    - GitHub: github.md
-    - Python practice: python_practice.md
-    - C++: cpp.md
-    - Docker: docker.md
+    - 1. Unixコマンド入門: unix_command.md
+    - 2. Python入門: python.md
+    - 3. Git入門: git.md
+    - 4. GitHub入門: github.md
+    - 5. Python総合演習: python_practice.md
+    - 6. C++入門: cpp.md
+    - 7. Docker入門: docker.md
 theme:
   name: material
   language: ja
