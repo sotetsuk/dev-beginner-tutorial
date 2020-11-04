@@ -15,7 +15,7 @@ AppleStoreに行けば、すべてのアプリケーションはバージョン�
 
 | <div style="text-align:center"><img src="/assets/version.png" width=400 /></div> | <div style="text-align:center"><img src="/assets/git.png" width=400 /></div> |
 |:---:|:---:|
-| AppleStoreにおけるアプリケーションのバージョン | Gitのソースコード自体もGitで管理されています github.com/git/git  |
+| AppleStoreにおけるアプリケーションのバージョン | Gitのソースコード自体もGitで管理されています [github.com/git/git](https://github.com/git/git)  |
 
 ## :desktop_computer: 事前準備（環境設定）
 
