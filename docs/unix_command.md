@@ -32,9 +32,9 @@ WSLを通じてWindows上でUbuntuを使いましょう。
 Terminalアプリを起動できればOKです。
 
 ## :blue_book: 学習コース
-どれか一つコースを選択してUnixコマンドの基本的な操作方法を学んでみましょう。
+どれか一つコースを選択してUnixコマンドの基本的な操作方法を学んでみましょう
 
-- [UNIXコマンド入門 | ドットインストール](https://dotinstall.com/lessons/basic_unix_v3)（有料）
+- [UNIXコマンド入門 | ドットインストール](https://dotinstall.com/lessons/basic_unix_v3)（有料だがオススメ）
 - [はじめてのUNIXコマンド入門講座 | TechAcademy](https://www.youtube.com/watch?v=BLFPr2DsDys&list=PLjw-30bsJNVWvKT9G3n43GoeqOMmdweuQ)
 
 ## :white_check_mark: 習熟度チェック
