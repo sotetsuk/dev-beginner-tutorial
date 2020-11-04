@@ -1,4 +1,5 @@
 # Python総合演習
+TBA
 
 ## Pythonを使ったパッケージ・CLIコマンド開発
 

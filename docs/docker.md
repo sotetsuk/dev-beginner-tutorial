@@ -1,2 +1,3 @@
+TBA
 
-- [（有料）Docker入門](https://dotinstall.com/lessons/basic_docker)
+- [Docker入門 | ドットインストール](https://dotinstall.com/lessons/basic_docker)（有料）
