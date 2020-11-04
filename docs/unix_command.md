@@ -56,16 +56,16 @@ history | cut -d " " -f 4 | sort | uniq -c | sort -rn | head -n 10
 
 | 順位 | コマンド | 説明 |
 |:---:|:---|:---|
-| 1 | ls || 
-| 2 | git || 
-| 3 | cd|| 
-| 4 | vi|| 
-| 5 | cat|| 
-| 6 | rm|| 
-| 7 | cp|| 
-| 8 | python|| 
-| 9 | docker|| 
-| 10 | less|| 
+| 1 | git  | |
+| 2 | ls   | |
+| 3 | cd   | |
+| 4 | vi   | |
+| 5 | cat  | |
+| 6 | rm   | |
+| 7 | cp   | |
+| 8 | python| |
+| 9 | docker| |
+| 10 | less | |
 
 !!! check "使用頻度の高いコマンド"
     上記表の `git`, `python`, `docker` 以外のコマンドがどんなコマンドか分かるか確認しましょう。
@@ -88,6 +88,7 @@ history | cut -d " " -f 4 | sort | uniq -c | sort -rn | head -n 10
 | head|| 
 | tail|| 
 | touch|| 
+| curl|| 
 | ping|| 
 | split|| 
 | find|| 
