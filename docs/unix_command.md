@@ -60,18 +60,18 @@ CUIからの操作は、ターミナルから**UNIXコマンド**を入力する
 history | cut -d " " -f 4 | sort | uniq -c | sort -rn | head -n 10
 ```
 
-| 順位 | コマンド | 説明 |
+| 順位 | コマンド | 用途 |
 |:---:|:---|:---|
-| 1 | git  | |
-| 2 | ls   | |
-| 3 | cd   | |
-| 4 | vi   | |
-| 5 | cat  | |
-| 6 | rm   | |
-| 7 | cp   | |
-| 8 | python| |
-| 9 | docker| |
-| 10 | less | |
+| 1 | git  | Gitを起動する |
+| 2 | ls   | ファイルやディレクトリを表示する (list) |
+| 3 | cd   | ディレクトリを移る (change directory) |
+| 4 | vi   | vimエディタを起動する |
+| 5 | cat  | ファイルを表示したり、結合したりする (catenate) |
+| 6 | rm   | ファイルやディレクトリを削除する (remove) |
+| 7 | cp   | ファイルやディレクトリをコピーする (copy) |
+| 8 | python| Pythonを起動する |
+| 9 | docker| Dockerを起動する |
+| 10 | less | ファイルの内容をスクロール可能な形で表示する |
 
 !!! check "使用頻度の高いコマンド"
     上記表の `git`, `python`, `docker` 以外のコマンドがどんなコマンドか分かるか確認しましょう。
@@ -87,20 +87,20 @@ history | cut -d " " -f 4 | sort | uniq -c | sort -rn | head -n 10
 
 |コマンド|説明|
 |:---|:---|
-| ssh || 
-| mkdir|| 
-| which|| 
-| mv|| 
-| head|| 
-| tail|| 
-| touch|| 
-| curl|| 
-| ping|| 
-| split|| 
-| find|| 
-| cut|| 
-| awk|| 
-| sed|| 
+| mkdir| ディレクトリを作る (make directory) | 
+| mv| ファイルやディレクトリを移す (move) | 
+| head| ファイルや入力の最初の方の行を表示する | 
+| tail| ファイルや入力の最後の方の行を表示する | 
+| split| ファイルや入力を行毎で小さなファイルに分割する | 
+| cut| ファイルや入力の各行の一部分を切り取る | 
+| which| コマンドの実行プログラムのパスを調べる | 
+| find| ファイルやディレクトリを探す | 
+| touch| 空ファイルを作ったり、最終変更時刻を更新する | 
+| ssh | 安全に遠隔マシンに接続する (secure shell) | 
+| ping| 遠隔マシンとネットワークが疎通しているか確認する | 
+| curl| データ転送・APIの利用に使われる | 
+| awk| ファイルや入力を柔軟に加工をする | 
+| sed| ファイルや入力に特定の変更を加える (stream editor) | 
 
 
 ## :pencil: 演習
