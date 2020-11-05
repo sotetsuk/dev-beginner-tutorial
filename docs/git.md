@@ -100,4 +100,4 @@ App Storeに行くと、アプリケーションのバージョンが明示さ�
 
 ## :gift: 付録
 
-- [Pro Git Book](https://git-scm.com/book/ja/v2)
+[Pro Git Book](https://git-scm.com/book/ja/v2) より詳しく正確なGitの説明はこちらを参照して下さい。
