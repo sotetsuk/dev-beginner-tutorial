@@ -50,6 +50,7 @@ Pythonを開発・実行する環境としては、ローカルマシン（自�
 
 ## :pencil: 演習
 
-基本的な文法やデータ構造 (`if`, `for`, `while`, `list`, `dict`, `set`, ...) が使いこなせるか確認しましょう。
+これらの演習問題を通じて、基本的な制御構文やデータ構造 (`if`, `for`, `while`, `list`, `dict`, `set`) が使いこなせるか確認しましょう。
 
-[AtCoder Beginners Selection](https://atcoder.jp/contests/abs/tasks) の問題をPythonで解いてみましょう。
+1. [AtCoder Beginners Selection | AtCoder](https://atcoder.jp/contests/abs/tasks) の問題をPythonで解いてみましょう。
+2. 前回、UNIXコマンドで実行した[第2章: UNIXコマンド | 言語処理100本ノック](https://nlp100.github.io/ja/)の問題を、今度はPythonで実装、実行してみましょう。
