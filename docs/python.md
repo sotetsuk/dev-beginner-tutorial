@@ -22,18 +22,22 @@
 
 ## :computer: 事前準備（環境設定）
 
-Pythonを開発・実行する環境としては、ローカルマシン（自分の手元のPC）に加えて、サーバ上の[Jupyter Notebook](https://jupyter.org/)形式を選択することもできます。必要に応じてローカルマシン使い分けてみましょう。
+Pythonを開発・実行する環境としては、ローカルマシン（自分の手元のPC）に加えて、サーバ上の[Jupyter Notebook](https://jupyter.org/)形式を選択することもできます。必要に応じてローカルマシンと使い分けてみましょう。
 
-### Google Colab
+### [Google Colab](https://colab.research.google.com/)
 
-[Google Colab](https://colab.research.google.com/)はGoogleが提供するJupyter Notebook形式でのPython実行環境サービスです。Google Colabを活用すれば、環境構築の労力ゼロでPythonを使い始めることができます。特に、データの集計や可視化などの場面では、Google Colabのようなノートブック形式でPythonを実行するのが便利です。
+Google ColabはGoogleが提供するJupyter Notebook形式でのPython実行環境サービスです。Google Colabを活用すれば、環境構築の労力ゼロでPythonを使い始めることができます。特に、**データの集計や可視化**などの場面では、Google Colabのようなノートブック形式でPythonを実行するのが便利です。また、無料でGPUが利用できるので、**深層学習モデルの学習**にも使えます。
 
-### PyCharm
-[PyCharm](https://www.jetbrains.com/ja-jp/pycharm/)はローカルマシンでの統合開発環境として最高のモノの一つです。WindowsでもMacでもPyCharmをまずインストールして下さい。ある程度規模の大きいソフトウェアの開発では、ローカルマシンで統合開発環境を使うのが必須になります。学生は無料でプロフェッショナル版を使うことができます。
+!!! warning ""
+    学習教材で2.の東大の教材を選択する場合は、Google Colabだけで簡潔するため、ローカルマシンの環境構築 (PyCharmの導入) は後回しにしても問題ありません。
 
-- なお、学習教材で2.の東大の教材を選択する場合は、ローカルマシンの環境構築は後回しにしても問題ありません。
-- モダンなPython開発環境としては、他にも[Visual Studio Code](https://code.visualstudio.com/)も選択肢に入りますが、特に設定せず最初から便利なPyCharmが初学者にはオススメです。
-- WindowsではUNIXコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
+### [PyCharm](https://www.jetbrains.com/ja-jp/pycharm/)
+
+PyCharmは非常に高性能なローカルマシンでの統合開発環境です。WindowsでもMacでも、まずPyCharmをインストールして下さい。Google Colabより導入に一手間かかりますが、ある程度**規模の大きいソフトウェアの開発**では、ローカルマシンで統合開発環境を使うのが必須になります。学生は無料でプロフェッショナル版を使うことができます。
+
+!!! warning ""
+    - モダンなPython開発環境としては、他にも[Visual Studio Code](https://code.visualstudio.com/)も選択肢に入りますが、特に設定せず最初から便利なPyCharmが初学者にはオススメです。
+    - WindowsではUNIXコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
 
 ## :orange_book: 学習教材
 
