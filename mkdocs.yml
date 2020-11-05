@@ -22,12 +22,13 @@ theme:
   palette:
     scheme: slate
     primary: teal
-    accent: orange
+    accent: deep purple
   font:
     text: Noto Sans
     code: Inconsolata
 markdown_extensions:
   - admonition
+  - pymdownx.tabbed
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg

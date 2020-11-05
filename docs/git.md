@@ -39,15 +39,15 @@ App Storeに行くと、アプリケーションのバージョンが明示さ�
 
 ## :computer: 事前準備（環境設定）
 
-### Windows
+=== "Windows"
 
-- WSLのUbuntu上で `git` がインストールされていることを確認してください: `$ which git`
-- もしなければ `$ sudo apt-get install git`
+    1. WSLのUbuntu上で `git` がインストールされていることを確認してください: `$ which git`
+    2. もしなければ `$ sudo apt-get install git`
 
-### Mac
+=== "Mac"
 
-- ターミナルから `git` がインストールされていることを確認して下さい: `$ which git`
-- もしなければ [Homebrew](https://brew.sh/) を使って `$ brew install git`
+    1. ターミナルから `git` がインストールされていることを確認して下さい: `$ which git`
+    2. もしなければ [Homebrew](https://brew.sh/) を使って `$ brew install git`
 
 ## :orange_book: 学習教材
 
