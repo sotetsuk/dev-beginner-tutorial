@@ -49,8 +49,11 @@ UNIXコマンドによる操作は、1000個のファイルを連番で作ると
 ## :orange_book: 学習教材
 どちらか一つコースを選択してUNIXコマンドの基本的な操作方法を学んでみましょう。
 
-1. [UNIXコマンド入門 | ドットインストール](https://dotinstall.com/lessons/basic_unix_v3)（有料だがオススメ）
+1. [**UNIXコマンド入門 | ドットインストール**](https://dotinstall.com/lessons/basic_unix_v3)（有料）
 2. [はじめてのUNIXコマンド入門講座 | TechAcademy](https://www.youtube.com/watch?v=BLFPr2DsDys&list=PLjw-30bsJNVWvKT9G3n43GoeqOMmdweuQ)
+
+!!! warning "UNIXコマンド入門 (ドットインストール) の注意点"
+    動画で扱っているOSがAlpineなので少しMacやUbuntuと勝手が違う点があるので注意してください。例えば、 `ash` は `bash`と読み替えて下さい。
 
 ## :white_check_mark: 習熟度チェック
 
