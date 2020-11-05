@@ -27,14 +27,19 @@ C++特有の長所も存在します。C++は全ての静的型付け言語を�
     
     > [https://github.com/numpy/numpy](https://github.com/numpy/numpy)
 
-
 ## :computer: 事前準備（環境設定）
 
-[CLion](https://www.jetbrains.com/ja-jp/clion/)を使って開発します。
+### [CLion](https://www.jetbrains.com/ja-jp/clion/)
+
+C++を始めとする静的型付け言語の開発ではPythonよりも統合開発環境の恩恵に預かれますが、逆に言えば高性能な統合開発環境のサポートなしで開発するのは難しいです。
+ここでは、統合開発環境として[CLion](https://www.jetbrains.com/ja-jp/clion/)を使って開発しますので、MacでもWindowsでもこちらをインストールして下さい。
+PyCharmと同じJetBrains社の製品で、使い勝手もほぼ同じになります。
+
+他の選択肢として、[Visual Studio Code](https://code.visualstudio.com/)や、Windowsであれば[Visual Studio](https://visualstudio.microsoft.com/ja/vs/)も有力な選択肢ですが、ここでもクラスプラットフォームであることと、何も設定せずともデフォルトでの使い勝手の良いことからCLionを選択します。
 
 ## :orange_book: C++文法の学習
 
-[C++入門 AtCoder Programming Guide for beginners (APG4b) | AtCoder](https://atcoder.jp/contests/APG4b)
+[C++入門 AtCoder Programming Guide for beginners (APG4b) | AtCoder](https://atcoder.jp/contests/APG4b)でC++の基本的な文法について学習しましょう。
 
 ## :pencil: 演習
 
@@ -42,4 +47,4 @@ Pythonで一度解いた、[AtCoder Beginners Selection | AtCoder](https://atcod
 
 ## :gift: 付録
 
-[江添亮のC++入門](https://ezoeryou.github.io/cpp-intro/) 
+[江添亮のC++入門](https://ezoeryou.github.io/cpp-intro/): C++は学習難易度が高いことで有名な言語です。C++のより詳しい入門書としてこちらの書籍をオススメします。
