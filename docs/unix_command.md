@@ -85,7 +85,7 @@ history | cut -d " " -f 4 | sort | uniq -c | sort -rn | head -n 10
 
 **その他の使用頻度が高かったコマンドリスト**
 
-|コマンド|説明|
+|コマンド|用途|
 |:---|:---|
 | mkdir| ディレクトリを作る (make directory) | 
 | mv| ファイルやディレクトリを移す (move) | 
