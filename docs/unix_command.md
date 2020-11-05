@@ -116,7 +116,7 @@ history | awk '{print $2}' | sort | uniq -c | sort -rn | head -n 10
 [自然言語処理100本ノック第二章](https://nlp100.github.io/ja/ch02.html)の問題を解いてみましょう。
 この問題は、特定のUNIXコマンドと同等の動作をするプログラムを実装するのが課題となっていますが、ここではUNIXコマンドを使ってみるだけで十分です。
 
-## 付録
+## :gift: 付録
 興味のある方は、さらにこれらのレッスンを学習してみてください。
 
 - [vim入門 | ドットインストール](https://dotinstall.com/lessons/basic_vim)
