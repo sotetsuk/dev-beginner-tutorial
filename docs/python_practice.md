@@ -9,7 +9,7 @@
 [github.com/sotetsuk/python-dev-tutorial](https://github.com/sotetsuk/python-dev-tutorial)
 
 
-## :pencil:  追加課題
+## :pencil: 演習 
 
 これまで学習してきたUNIXコマンド/Python/Git/GitHub/単体テストの知識を活かしつつ、自分の身近な問題や興味なる事柄を解決するPythonパッケージまたはCLIコマンドをGitHub上で開発してみましょう。
 
@@ -25,7 +25,7 @@
 
 [github.com/joelgrus/joelnet](https://github.com/joelgrus/joelnet)のリポジトリ内容をビデオを見ながら自分で再構築して、簡易ニューラルネットワークライブラリを作ってみましょう。
 
-## :pencil:  追加課題
+## :pencil: 演習
 2. 自分で再構築した簡易ニューラルネットワークライブラリで、手書き文字認識の分類をやってみよう。 ([Recognizing hand-written digits](https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html))
 3. LossとAccuracyの学習途中の変遷を[Tensorboard](https://www.tensorflow.org/tensorboard?hl=ja)を使って可視化してみよう。ここではTensorflowやPyTorchのようなTensorboard対応のフレームワークを使うわけではないので、[tensorboardX](https://github.com/lanpa/tensorboardX)を利用してみましょう。
 4. 手書き文字認識の分類性能が高くなるハイパーパラメータを自分でいくつか試して探してみましょう。このとき、[過学習](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja)に注意しよう。
