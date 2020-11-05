@@ -29,15 +29,14 @@ CUIからの操作は、ターミナルから**UNIXコマンド**を入力する
 
 ## :computer: 事前準備（環境設定）
 
-### Windows
+=== "Windows"
+     Windows Subsystem for Linux (WSL) を利用することで、Windows上でUbuntu20.04を使いましょう。
 
-WSLを通じてWindows上でUbuntuを使いましょう。
+    > [Windows 10 用 Windows Subsystem for Linux のインストール ガイド](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10)
 
-> [Windows 10 用 Windows Subsystem for Linux のインストール ガイド](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10)
+=== "Mac"
 
-### Mac
-
-Terminalアプリを起動できればOKです。
+    デフォルトで入っているターミナル (Terminal) アプリを開くことができればOKです。
 
 ## :orange_book: 学習教材
 どちらか一つコースを選択してUNIXコマンドの基本的な操作方法を学んでみましょう。
