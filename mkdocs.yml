@@ -13,7 +13,7 @@ nav:
     - 4. GitHub入門: github.md
     - 5. Python総合演習: python_practice.md
     - 6. C++入門: cpp.md
-    - 7. Docker入門: docker.md
+    - 7. おわりに: conclusion.md
 theme:
   name: material
   language: ja

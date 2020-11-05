@@ -38,4 +38,4 @@
  4. [GitHub入門](github.md): GitHubを使ったチーム開発の慣習を学びます。
  6. [Python総合演習](python_practice.md): これまで学んだ知識を使ってPythonで開発を行います。
  7. [C++入門](cpp.md): C++の文法を学びます。
- 8. [Docker入門](docker.md): コンテナの使い方を学びます。
+ 8. [おわりに](conclusion.md)
