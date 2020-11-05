@@ -8,8 +8,8 @@ App Storeに行くと、アプリケーションのバージョンが明示さ�
     ![version](assets/version.png)
 
 ソフトウェア開発において、バージョン管理は必要不可欠です。
-残念ながら多くのヒトは（本人が思っているほど）賢くありません。
-例えば、プログラムを書いていると、次のようなことが頻繁に起こります。
+残念ながら、多くのヒトは（本人が思っているほど）賢くありません。
+例えば、プログラムを書いていると次のようなことが頻繁に起こります。
 
 !!! bug ""
     一時間前には動いていたソースコードが、何故か今は動かないし、**この一時間の間で加えた変更の一体どこが原因かも分からない。**
@@ -50,40 +50,54 @@ App Storeに行くと、アプリケーションのバージョンが明示さ�
     2. もしなければ [Homebrew](https://brew.sh/) を使って `$ brew install git`
 
 ## :orange_book: 学習教材
+どれか一つを選択してGitの基本的な操作について学習しましょう。
 
-[git入門 | ドットインストール](https://dotinstall.com/lessons/basic_git)
+1. [**git入門 | ドットインストール**](https://dotinstall.com/lessons/basic_git)
+2. [計算機科学実験及演習3ハードウェア「Gitの使い方」 | 京都大学情報学科計算機科学コース](http://www.lab3.kuis.kyoto-u.ac.jp/~takase/le3a/2020HW3-git.pdf)
 
 ## :white_check_mark: 習熟度チェック
+
+!!! check "ワーキングディレクトリ | ステージングエリア | リポジトリ"
+
+    これら3つの領域の違いを理解できているか確認しましょう。
+
+!!! check "git pull | git fetch | git merge"
+
+    これら3つのコマンドの動作の違いを理解できているか確認しましょう。
 
 !!! check "Gitコマンド一覧"        
     下記表のコマンドが何をするコマンドか分かるか確認しましょう。見覚えがない場合、どんなコマンドか調べてみましょう。
 
-| コマンド | 説明 |
+| コマンド | 用途 |
 |:---|:---|
-| git status | |
-| git add | |
-| git push | |
-| git commit | |
-| git checkout | | 
-| git checkout -b | | 
-| git pull | |
-| git fetch | |
-| git clone | |
-| git grep | |
-| git diff | |
-| git log | |
-| git rm | |
-| git merge | |
-| git reset | |
-| git revert | |
-| git rebase | |
+| git checkout | 別のブランチへ移る。変更を取り消す。 | 
+| git add | ファイルをステージングする |
+| git rm | ファイルを削除し、Gitでの追跡をやめる |
+| git commit | ステージングされた変更をスナップショットとして保存する |
+| git push | リモートリポジトリにブランチの内容をアップロードする |
+| git fetch | リモートリポジトリからブランチの内容をダウンロードする |
+| git pull | リモートリポジトリからブランチの内容をダウンロードしてマージする |
+| git clone | リポジトリをダウンロードする |
+| git merge | あるブランチを別のブランチに統合する |
+| git status | ステージされた変更、ステージされてない変更を確認する |
+| git log | コミット履歴を確認する |
+| git diff | 差分を表示する |
+| git grep | Gitで追跡されているファイル内でgrepする |
+| git stash | 変更を退避する |
+| git reset | コミットされた変更を元に戻す |
+| git revert | コミットの内容を打ち消すコミットをする |
+| git rebase | ブランチを統合したり、コミット履歴を改変する |
 
 
-!!! check "git switch/restore"
-    新しいバージョンのgitでは、`git checkout`の代わりに`git switch/restore`を使うことが推奨されています。`git checkout`のコマンドと`git switch/restore`の対応について調べてみましょう。
+!!! check "git switch | git restore"
+    新しいバージョンのgitでは、`git checkout`の代わりに`git switch`と`git restore`を使うことが推奨されています。古い`git checkout`コマンドと新しい`git switch`と`git restore`の対応について調べてみましょう。
 
-| 旧 | 新 |
-|:---|:---|
-| git checkout | git switch | 
-| git checkout -b | git switch -c | 
-| git checkout -- | git restore | 
+| 旧 | 新 | 用途 |
+|:---|:---|:---|
+| git checkout | git switch | 既存の別ブランチへと移る |
+| git checkout -b | git switch -c | 新規の別ブランチへと移る |
+| git checkout -- | git restore | 変更の取り消し |
+
+## :gift: 付録
+
+- [Pro Git Book](https://git-scm.com/book/ja/v2)
