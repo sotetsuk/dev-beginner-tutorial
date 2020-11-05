@@ -29,14 +29,21 @@ CUIからの操作は、ターミナルから**UNIXコマンド**を入力する
 
 ## :computer: 事前準備（環境設定）
 
-=== "Windows"
-     Windows Subsystem for Linux (WSL) を利用することで、Windows上でUbuntu20.04を使いましょう。
-
-    > [Windows 10 用 Windows Subsystem for Linux のインストール ガイド](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10)
-
 === "Mac"
 
     デフォルトで入っているターミナル (Terminal) アプリを開くことができればOKです。
+    [Spotlight](https://support.apple.com/ja-jp/HT204014)から検索することで起動できます。
+
+    ![spot-terminal](assets/spot-terminal.png)
+
+=== "Windows"
+     Windows Subsystem for Linux (WSL) を利用することで、Windows上でUbuntu20.04を使いましょう。
+     下記リンクのガイダンスに従って、WSLをインストールして下さい。
+
+    > [Windows 10 用 Windows Subsystem for Linux のインストール ガイド](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10)
+    
+    ![wsl](assets/wsl.png)
+
 
 ## :orange_book: 学習教材
 どちらか一つコースを選択してUNIXコマンドの基本的な操作方法を学んでみましょう。
