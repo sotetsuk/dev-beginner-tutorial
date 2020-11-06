@@ -1,23 +1,27 @@
 # GitHub入門
 
-!!! important "これだけ！GitHub上での開発の流れ"
+## :ok: これだけ！GitHub上での開発の流れ
 
-    !!! note "Issueベースでのタスク管理"
+はじめに、ここで学ぶことの結論をまとめてしまいます。GitHub上では、**Issueベースでのタスク管理**と、**Pull Request (PR) ベースでの開発**を行います。
+    
+[![issue](assets/issue.png)](https://github.com/sotetsuk/dev-beginner-tutorial/issues)
 
-        何か必要な機能や、修正必要なバグがあれば、まずIssueを作成します。
+!!! note "Issueベースでのタスク管理"
+
+    何か必要な機能や修正があれば、まずIssueを作成して「なぜこの機能・修正が必要なのか」「その仕様は何なのか」を書き出します。
+    実際に開発に移る機能や修正は、Issueリストの中から優先順位やタスクの依存関係などに応じて決定します。
 
 
-    !!! note "PRベースでの開発"
+!!! note "Pull Request (PR) ベースでの開発"
 
-        1. 優先順位に基づいて、実装する機能・修正の仕様を決める（解決するIssueを決める）。
-        1. `main` にチェックアウトし、リモートリポジトリから最新の変更を取り込む。 `git switch main && git pull origin main`
-        2. 新しい機能を実装するブランチを `main` から作る。 `git switch -c <branch name>`
-        3. ブランチ上で機能を実装していく。
-            3. 変更を実装し、適宜コミットする。 `git add <file>` `git commit -m "<commit message>"`
-            4. 適宜 `git push -u origin <branch name>` する。特に、最初のコミット直後には一度プッシュしてPRを作る。
-        5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込む。 `git fetch && git merge --no-ff origin/main` （競合が発生した場合は解決する）
-        6. レビューを経てPRを `main` にマージする。
-
+    1. 実装する機能・修正の仕様を決めます（解決するIssueを決めます）。
+    1. `main` にチェックアウトし、リモートリポジトリから最新の変更を取り込みます。 `git switch main && git pull origin main`
+    2. 新しい機能を実装するブランチを `main` から作ります。 `git switch -c <branch name>`
+    3. ブランチ上で機能を実装します。
+        3. 変更を実装し、適宜コミットします。 `git add <file>` `git commit -m "<commit message>"`
+        4. 適宜プッシュします。 `git push -u origin <branch name>` 特に、最初のコミット直後には一度プッシュしてPRを作り、Issueと関連付けます。
+    5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込みます。 `git fetch && git merge --no-ff origin/main` （競合が発生した場合は解決する）
+    6. レビューを経てPRを `main` にマージします。
 
 ## :question: なぜGitHubの使い方を学ぶのか？
 
