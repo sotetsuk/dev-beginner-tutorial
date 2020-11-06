@@ -68,7 +68,7 @@
 ## :pencil: 演習
 
 このドキュメント自体もGitHub上で書かれています。PRを作成して送ってみましょう。
-[README.md](https://github.com/sotetsuk/dev-beginner-tutorial/blob/main/README.md)の足跡に自分のGitHubのアイコンを追加してみましょう。
+[index.md](https://github.com/sotetsuk/dev-beginner-tutorial/blob/main/docs/index.md)の足跡に自分のGitHubのアイコンを追加してみましょう。
 
 
 その他、このチュートリアル自体のコンテンツについても修正点を考えてIssueやPRを送ってみましょう。
