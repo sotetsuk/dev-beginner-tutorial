@@ -5,25 +5,26 @@
 ## :orange_book: GitHubを用いた基本的な開発の流れ
 
 !!! important ""
-    1. `master/main` にチェックアウトし、リモートリポジトリから最新の変更を取り込む `git switch main && git pull origin main`
-    2. 新しい機能を実装するブランチを `master/main` から作る `git switch -c <branch name>`
-    3. 変更を実装し、コミットする `git add <file>` `git commit -m "<commit message>"`
-    4. `git push`
-    5. Ask review
-    6. Squash small changes if needed
-    7. Merge
+    1. `main` にチェックアウトし、リモートリポジトリから最新の変更を取り込む `git switch main && git pull origin main`
+    2. 新しい機能を実装するブランチを `main` から作る `git switch -c <branch name>`
+    3. ブランチ上で機能を実装していく
+        3. 変更を実装し、適宜コミットする `git add <file>` `git commit -m "<commit message>"`
+        4. 適宜 `git push -u origin <branch name>` する。特に、最初のコミット直後には一度プッシュしてPRを作る
+    5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込む `git fetch -a && git merge --no-ff origin/main`
+    6. レビューを経てPRを `master/main` にマージする
+
 
 > [GitHub Flow (Japanese translation)](https://gist.github.com/Gab-km/3705015)
 
 ## :police_officer: Git/GitHubでの開発におけるルール
 
-## Git/GitHubにおける慣習
+## :book: Git/GitHubにおける慣習
 
 絶対というわけではないが、よく見かけ、合理性のある者たち。
 
 参加しているプロジェクトの慣習に合わせるのが良いと思われます。
 
-### MergeはSquash and Mergeにする
+### Mergeは"Squash And Merge"にする
 
 ### ブランチ名に作業者の名前や変更の種類を先頭につける。
 
@@ -33,8 +34,7 @@
     - sotetsuk/refactor/remove-comments
     - sotetsuk/docs/how-to-use
 
-
-## オススメの設定
+## :dizzy: オススメの設定
 
 `~/.gitconfig` 
 
@@ -45,11 +45,18 @@
 [alias]
         sw = switch
         br = branch
+        sync = !git checkout master && git pull origin master && git fetch -p origin && git branch -d $(git branch --merged | grep -v master | grep -v '*')
+
 [push]
         default = current
+[merge]
+    ff = false
+[pull]
+    ff = only
 ```
 
-> [gitのpush.defaultに関するノウハウ](https://qiita.com/awakia/items/6aaea1ffecba725be601)
+> - [Wantedlyで開発するときにとりあえず設定してもらう事一覧 | Qiita](https://qiita.com/awakia/items/4c599ebe29a8b2b6ca27)
+> - [gitのpush.defaultに関するノウハウ | Qiita](https://qiita.com/awakia/items/6aaea1ffecba725be601)
 
 ## :pencil: 演習
 
