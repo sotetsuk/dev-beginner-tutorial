@@ -57,5 +57,6 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
 
 これらの演習問題を通じて、基本的な制御構文やデータ構造 (`if`, `for`, `while`, `list`, `dict`, `set`) が使いこなせるか確認しましょう。
 
-1. [AtCoder Beginners Selection | AtCoder](https://atcoder.jp/contests/abs/tasks) の問題をPythonで解いてみましょう。
-2. 前回、UNIXコマンドで実行した[第2章: UNIXコマンド | 言語処理100本ノック](https://nlp100.github.io/ja/)の問題を、今度はPythonで実装、実行してみましょう。
+:white_check_mark: [AtCoder Beginners Selection | AtCoder](https://atcoder.jp/contests/abs/tasks) の問題をPythonで解いてみましょう。
+
+:white_check_mark: 前回、UNIXコマンドで実行した[第2章: UNIXコマンド | 言語処理100本ノック](https://nlp100.github.io/ja/)の問題を、今度はPythonで実装、実行してみましょう。

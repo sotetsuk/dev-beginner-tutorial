@@ -43,7 +43,7 @@ PyCharmと同じJetBrains社の製品で、使い勝手もほぼ同じになり�
 
 ## :pencil: 演習
 
-Pythonで一度解いた、[AtCoder Beginners Selection | AtCoder](https://atcoder.jp/contests/abs/tasks) の問題をC++で解き直してみましょう。
+:white_check_mark: Pythonで一度解いた、[AtCoder Beginners Selection | AtCoder](https://atcoder.jp/contests/abs/tasks) の問題をC++で解き直してみましょう。
 
 ## :gift: 付録
 
