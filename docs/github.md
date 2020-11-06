@@ -44,13 +44,13 @@
 
 ```yaml
 [user]
-        name = <YOUR NAME>
-        email = <YOUR E-MAIL>
+    name = <YOUR NAME>
+    email = <YOUR E-MAIL>
 [alias]
-        sw = switch
-        br = branch
+    sw = switch
+    br = branch
 [push]
-        default = current
+    default = current
 [merge]
     ff = false
 [pull]
@@ -58,6 +58,7 @@
 ```
 
 > - [gitのpush.defaultに関するノウハウ | Qiita](https://qiita.com/awakia/items/6aaea1ffecba725be601)
+> - [git merge 時は必ずマージコミットを作るようにする | Hatena blog](https://neos21.hatenablog.com/entry/2017/06/18/080000)
 
 ## :pencil: 演習
 
