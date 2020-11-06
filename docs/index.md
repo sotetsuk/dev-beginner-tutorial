@@ -39,3 +39,7 @@
  6. [Python総合演習](python_practice.md): これまで学んだ知識を使ってPythonで開発を行います。
  7. [C++入門](cpp.md): C++の文法を学びます。
  8. [おわりに](conclusion.md)
+
+## :footprints: 足跡
+
+ <a href="https://github.com/sotetsuk"><img src="https://github.com/sotetsuk.png" height="auto" width="50" style="border-radius:50%"></a>
