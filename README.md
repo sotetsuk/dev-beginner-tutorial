@@ -5,7 +5,7 @@
 https://sotets.uk/dev-beginner-tutorial
 
 
-## How to use
+## 使い方
 
 ```sh
 $ ./serve.sh
