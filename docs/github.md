@@ -45,8 +45,6 @@
 [alias]
         sw = switch
         br = branch
-        sync = !git checkout master && git pull origin master && git fetch -p origin && git branch -d $(git branch --merged | grep -v master | grep -v '*')
-
 [push]
         default = current
 [merge]
@@ -55,7 +53,6 @@
     ff = only
 ```
 
-> - [Wantedlyで開発するときにとりあえず設定してもらう事一覧 | Qiita](https://qiita.com/awakia/items/4c599ebe29a8b2b6ca27)
 > - [gitのpush.defaultに関するノウハウ | Qiita](https://qiita.com/awakia/items/6aaea1ffecba725be601)
 
 ## :pencil: 演習
