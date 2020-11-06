@@ -1,16 +1,22 @@
 # GitHub入門
 
-!!! important "これだけ覚える！GitHub上での開発の流れ"
+!!! important "これだけ！GitHub上での開発の流れ"
 
-    基本的には次の1.~6.を繰り返すだけです。
+    !!! note "Issueベースでのタスク管理"
 
-    1. `main` にチェックアウトし、リモートリポジトリから最新の変更を取り込む。 `git switch main && git pull origin main`
-    2. 新しい機能を実装するブランチを `main` から作る。 `git switch -c <branch name>`
-    3. ブランチ上で機能を実装していく。
-        3. 変更を実装し、適宜コミットする。 `git add <file>` `git commit -m "<commit message>"`
-        4. 適宜 `git push -u origin <branch name>` する。特に、最初のコミット直後には一度プッシュしてPRを作る。
-    5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込む。 `git fetch && git merge --no-ff origin/main` （競合が発生した場合は解決する）
-    6. レビューを経てPRを `main` にマージする。
+        何か必要な機能や、修正必要なバグがあれば、まずIssueを作成します。
+
+
+    !!! note "PRベースでの開発"
+
+        1. 優先順位に基づいて、実装する機能・修正の仕様を決める（解決するIssueを決める）。
+        1. `main` にチェックアウトし、リモートリポジトリから最新の変更を取り込む。 `git switch main && git pull origin main`
+        2. 新しい機能を実装するブランチを `main` から作る。 `git switch -c <branch name>`
+        3. ブランチ上で機能を実装していく。
+            3. 変更を実装し、適宜コミットする。 `git add <file>` `git commit -m "<commit message>"`
+            4. 適宜 `git push -u origin <branch name>` する。特に、最初のコミット直後には一度プッシュしてPRを作る。
+        5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込む。 `git fetch && git merge --no-ff origin/main` （競合が発生した場合は解決する）
+        6. レビューを経てPRを `main` にマージする。
 
 
 ## :question: なぜGitHubの使い方を学ぶのか？
@@ -63,4 +69,12 @@
 ## :pencil: 演習
 
 このドキュメント自体もGitHub上で書かれています。
+
 PRを作成して送ってみましょう。
+例えば、次のようなPRを送ってみて下さい。
+
+1. タイポを修正する。
+2. 表記ゆれを修正する。
+3. 不正確・誤っている説明を修正する。
+
+もし何も変更する点が思いつかなければ、[README.md]()
