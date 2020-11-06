@@ -23,7 +23,6 @@
 
 ## :orange_book: GitHubを用いた基本的な開発の流れ
 
-
 > [GitHub Flow (Japanese translation)](https://gist.github.com/Gab-km/3705015)
 
 ## :police_officer: Git/GitHubでの開発におけるルール
@@ -68,13 +67,15 @@
 
 ## :pencil: 演習
 
-このドキュメント自体もGitHub上で書かれています。
+このドキュメント自体もGitHub上で書かれています。PRを作成して送ってみましょう。
+[README.md](https://github.com/sotetsuk/dev-beginner-tutorial/blob/main/README.md)の足跡に自分のGitHubのアイコンを追加してみましょう。
 
-PRを作成して送ってみましょう。
+
+その他、このチュートリアル自体のコンテンツについても修正点を考えてIssueやPRを送ってみましょう。
 例えば、次のようなPRを送ってみて下さい。
 
-1. タイポを修正する。
-2. 表記ゆれを修正する。
-3. 不正確・誤っている説明を修正する。
+1. タイポをIssueで報告する and/or PRで修正する。
+2. 表記ゆれをIssueで報告する and/or PRで修正する。
+3. 不正確・誤っている説明をIssueで報告する and/or PRで修正する。
+4. 要望・改善案をIssueで報告する。
 
-もし何も変更する点が思いつかなければ、[README.md]()
