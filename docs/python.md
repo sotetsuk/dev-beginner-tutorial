@@ -36,8 +36,9 @@ Google ColabはGoogleが提供するJupyter Notebook形式でのPython実行環�
 PyCharmは非常に高性能なローカルマシンでの統合開発環境です。WindowsでもMacでも、まずPyCharmをインストールして下さい。Google Colabより導入に一手間かかりますが、ある程度**規模の大きいソフトウェアの開発**では、ローカルマシンで統合開発環境を使うのが必須になります。学生は無料でプロフェッショナル版を使うことができます。
 
 !!! warning ""
-    - モダンなPython開発環境としては、他にも[Visual Studio Code](https://code.visualstudio.com/)も選択肢に入りますが、特に設定せず最初から便利なPyCharmが初学者にはオススメです。
-    - WindowsではUNIXコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
+    モダンなPython開発環境としては、他にも[Visual Studio Code](https://code.visualstudio.com/)が選択肢に入りますが、拡張機能や設定が必要なので、初学者にはデフォルトで最初から便利なPyCharmがオススメです。
+    
+    WindowsではUNIXコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
 
 ## :orange_book: 学習教材
 
