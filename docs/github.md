@@ -10,7 +10,7 @@
     3. ブランチ上で機能を実装していく
         3. 変更を実装し、適宜コミットする `git add <file>` `git commit -m "<commit message>"`
         4. 適宜 `git push -u origin <branch name>` する。特に、最初のコミット直後には一度プッシュしてPRを作る
-    5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込む `git fetch -a && git merge --no-ff origin/main`
+    5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込む `git fetch && git merge --no-ff origin/main`
     6. レビューを経てPRを `master/main` にマージする
 
 
