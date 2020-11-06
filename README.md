@@ -7,6 +7,8 @@ https://sotets.uk/dev-beginner-tutorial
 
 ## 使い方
 
+ローカルサーバを立ち上げておけば、変更毎に自動でリフレッシュされる。
+
 ```sh
 $ ./serve.sh
 ```
