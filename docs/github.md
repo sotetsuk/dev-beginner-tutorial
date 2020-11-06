@@ -6,13 +6,13 @@
     
 [![issue](assets/issue.png)](https://github.com/sotetsuk/dev-beginner-tutorial/issues)
 
-!!! note "Issueベースでのタスク管理"
+!!! important "Issueベースでのタスク管理"
 
     何か必要な機能や修正があれば、まずIssueを作成して「なぜこの機能・修正が必要なのか」「その仕様は何なのか」を書き出します。
     実際に開発に移る機能や修正は、Issueリストの中から優先順位やタスクの依存関係などに応じて決定します。
 
 
-!!! note "Pull Request (PR) ベースでの開発"
+!!! important "Pull Request (PR) ベースでの開発"
 
     1. 実装する機能・修正の仕様を決めます（解決するIssueを決めます）。
     1. `main` にチェックアウトし、リモートリポジトリから最新の変更を取り込みます。 `git switch main && git pull origin main`
@@ -21,7 +21,7 @@
         3. 変更を実装し、適宜コミットします。 `git add <file>` `git commit -m "<commit message>"`
         4. 適宜プッシュします。 `git push -u origin <branch name>` 特に、最初のコミット直後には一度プッシュしてPRを作り、Issueと関連付けます。
     5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込みます。 `git fetch && git merge --no-ff origin/main` （競合が発生した場合は解決する）
-    6. レビューを経てPRを `main` にマージします。
+    6. レビューを経てPRを `main` に "Squash And Merge" でマージします。
 
 ## :question: なぜGitHubの使い方を学ぶのか？
 
@@ -31,25 +31,23 @@
 
 ## :police_officer: Git/GitHubでの開発におけるルール
 
-## :book: Git/GitHubにおける慣習
+## :book: TIPS
 
-絶対というわけではないが、よく見かけ、合理性のある者たち。
+絶対というわけではないが、よく見かけるある程度合理的なTIPSです。
 
-参加しているプロジェクトの慣習に合わせるのが良いと思われます。
+!!! tip "Mergeを "Squash And Merge" にする"
 
-### Mergeは"Squash And Merge"にする
+!!! tip "ブランチ名に作業者の名前や変更の種類を先頭につける"
 
-### ブランチ名に作業者の名前や変更の種類を先頭につける。
+    誰がどんな変更を加えているブランチなのかの視認性が少し良くなります。
 
-!!! example ""
-
-    - sotetsuk/feat/new-nn-model
-    - sotetsuk/refactor/remove-comments
-    - sotetsuk/docs/how-to-use
+    - `sotetsuk/feat/new-nn-model`
+    - `sotetsuk/refactor/remove-comments`
+    - `sotetsuk/docs/how-to-use`
 
 ## :dizzy: オススメの設定
 
-`~/.gitconfig` 
+設定ファイル `~/.gitconfig` を次のように編集してみましょう。
 
 ```yaml
 [user]
@@ -66,8 +64,9 @@
     ff = only
 ```
 
-> - [gitのpush.defaultに関するノウハウ | Qiita](https://qiita.com/awakia/items/6aaea1ffecba725be601)
-> - [git merge 時は必ずマージコミットを作るようにする | Hatena blog](https://neos21.hatenablog.com/entry/2017/06/18/080000)
+!!! quote ""
+    - [gitのpush.defaultに関するノウハウ | Qiita](https://qiita.com/awakia/items/6aaea1ffecba725be601)
+    - [git merge 時は必ずマージコミットを作るようにする | Hatena blog](https://neos21.hatenablog.com/entry/2017/06/18/080000)
 
 ## :pencil: 演習
 
@@ -83,7 +82,7 @@
 :white_check_mark: また、このチュートリアル自体のコンテンツについても修正点を考えてIssueやPRを送ってみましょう。
 例えば、次のようなPRを送ってみて下さい。
 
-!!! example "Issue/PRの例"
+!!! example ""
 
     1. タイポをIssueで報告する and/or PRで修正する。
     2. 表記ゆれをIssueで報告する and/or PRで修正する。
