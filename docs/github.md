@@ -67,15 +67,22 @@
 
 ## :pencil: 演習
 
-このドキュメント自体もGitHub上で書かれています。PRを作成して送ってみましょう。
+このドキュメント自体もGitHub上で書かれています :fontawesome-brands-github: 
+
+!!! important ""
+
+    [github.com/sotetsuk/dev-beginner-tutorial](https://github.com/sotetsuk/dev-beginner-tutorial)
+
+:white_check_mark: このドキュメントのリポジトリに、実際にPRを作成して送ってみましょう。
 [index.md](https://github.com/sotetsuk/dev-beginner-tutorial/blob/main/docs/index.md)の足跡に自分のGitHubのアイコンを追加してみましょう。
 
-
-その他、このチュートリアル自体のコンテンツについても修正点を考えてIssueやPRを送ってみましょう。
+:white_check_mark: また、このチュートリアル自体のコンテンツについても修正点を考えてIssueやPRを送ってみましょう。
 例えば、次のようなPRを送ってみて下さい。
 
-1. タイポをIssueで報告する and/or PRで修正する。
-2. 表記ゆれをIssueで報告する and/or PRで修正する。
-3. 不正確・誤っている説明をIssueで報告する and/or PRで修正する。
-4. 要望・改善案をIssueで報告する。
+!!! example "Issue/PRの例"
+
+    1. タイポをIssueで報告する and/or PRで修正する。
+    2. 表記ゆれをIssueで報告する and/or PRで修正する。
+    3. 不正確・誤っている説明をIssueで報告する and/or PRで修正する。
+    4. 要望・改善案をIssueで報告する。
 
