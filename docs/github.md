@@ -5,13 +5,13 @@
 ## :orange_book: GitHubを用いた基本的な開発の流れ
 
 !!! important ""
-    - `master/main` にチェックアウトし、リモートリポジトリから最新の変更を取り込む `git switch main && git `
-    - Checkout to your new feature branch
-    - Implement changes (follow one purpose and keep it small)
-    - Test your changes (e.g., make sure it passes build)
-    - Ask review
-    - Squash small changes if needed
-    - Merge
+    1. `master/main` にチェックアウトし、リモートリポジトリから最新の変更を取り込む `git switch main && git pull origin main`
+    2. 新しい機能を実装するブランチを `master/main` から作る `git switch -c <branch name>`
+    3. 変更を実装し、コミットする `git add <file>` `git commit -m "<commit message>"`
+    4. `git push`
+    5. Ask review
+    6. Squash small changes if needed
+    7. Merge
 
 > [GitHub Flow (Japanese translation)](https://gist.github.com/Gab-km/3705015)
 
@@ -36,6 +36,8 @@
 
 ## オススメの設定
 
+`~/.gitconfig` 
+
 ```yaml
 [user]
         name = <YOUR NAME>
@@ -50,3 +52,6 @@
 > [gitのpush.defaultに関するノウハウ](https://qiita.com/awakia/items/6aaea1ffecba725be601)
 
 ## :pencil: 演習
+
+このドキュメント自体もGitHub上で書かれています。
+PRを作成して送ってみましょう。
