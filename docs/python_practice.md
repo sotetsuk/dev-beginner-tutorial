@@ -5,6 +5,7 @@
 ## :orange_book:  Pythonを使ったパッケージ・CLIコマンド開発
 
 こちらの教材の内容を再構築して、Python開発の手順を学びましょう。
+この教材では、今までに学んだ内容も復習しながら、単体テストや型ヒントを用いた開発についても説明しています。
 
 [github.com/sotetsuk/python-dev-tutorial](https://github.com/sotetsuk/python-dev-tutorial)
 
