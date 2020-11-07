@@ -87,7 +87,7 @@ $ git add <file>
 $ git commit -m "<commit message>"
 ```
 
-最初のコミットのあとに、ブランチをプッシュしてPull Request (PR) を作り、他のチームメンバに状況を共有し、議論可能にします。
+**最初のコミットの直後に**、ブランチをプッシュしてPull Request (PR) を作り、他のチームメンバに自分がどんなタスクに着手したのかを共有し、議論可能にします。
 
 ```sh
 $ git push -u origin <new-branch-name>
