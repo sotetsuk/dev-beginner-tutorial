@@ -98,7 +98,7 @@ PRの作成時には、タイトルと本文を入力します。
 タイトルは一言でどんなことをしたのか、本文は（もしあれば）関連するIssueや、その実装方法（解決方法）などについて言及しましょう。
 下の例では、[#52](https://github.com/sotetsuk/dev-beginner-tutorial/pull/52)のPRを新しく作成し、右図で言及されている[#46](https://github.com/sotetsuk/dev-beginner-tutorial/issues/46)のIssueを解決します。
 
-| [新しいPRを作成する](https://github.com/sotetsuk/dev-beginner-tutorial/issues/new) | [作成されたPR](https://github.com/sotetsuk/dev-beginner-tutorial/issues) |
+| [新しいPRを作成する](https://github.com/sotetsuk/dev-beginner-tutorial/compare) | [作成されたPR](https://github.com/sotetsuk/dev-beginner-tutorial/pull/52) |
 |:---:|:---:|
 | ![pr new](assets/pr-new.png) | ![pr](assets/pr.png) |
 
@@ -110,6 +110,22 @@ PRの作成時には、タイトルと本文を入力します。
 
     GitHub上では、PRからIssueを関連付けすることができます（[プルリクエストをIssueにリンクする | GitHub Docs](https://docs.github.com/ja/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)）。
     特に、`resolves` や `fix` といったキーワードを付けることで、そのPRがマージされたときに自動でIssueを閉じることができます。
+
+機能が完成したと思ったら、そのプロジェクトで設定されている自動テストがきちんと通ることを確認します（[継続的インテグレーション](https://ja.wikipedia.org/wiki/%E7%B6%99%E7%B6%9A%E7%9A%84%E3%82%A4%E3%83%B3%E3%83%86%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3#:~:text=%E7%B6%99%E7%B6%9A%E7%9A%84%E3%82%A4%E3%83%B3%E3%83%86%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%81CI%EF%BC%88%E8%8B%B1,%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%A7%E3%81%82%E3%82%8B%E3%80%82)）。
+
+!!! warning ""
+
+    継続的インテグレーション (CI) の設定方法は次章で学びます。
+
+テストが通ったら、チーム開発であれば他のメンバにレビューをお願いし、レビューが通ったらマージをします（あるいは他のメンバにしてもらいます）。
+
+| レビュアをアサインする | PRをマージする |
+|:---:|:---:|
+| ![review](assets/review.png) | ![merge](assets/merge.png) |
+
+
+これが、新しい機能の追加・修正における一回のサイクルになります。
+このサイクルさえ覚えてしまえば、あとは同じことを繰り返すだけになります。
 
 ## :police_officer: Git/GitHubでの開発におけるルール
 
