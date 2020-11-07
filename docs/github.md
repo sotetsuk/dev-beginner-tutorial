@@ -42,7 +42,7 @@ Git/GitHubを用いた開発フローに、何か一つの正解があるとい�
 
     [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html) [[日本語訳](https://gist.github.com/Gab-km/3705015)]
 
-### Issueベースでのタスク管理
+### :arrow_forward: Issueベースでのタスク管理
 
 何か必要な機能や修正がある場合、まず、新しいIssueを作ります。
 Issueには、
@@ -58,7 +58,7 @@ Issueには、
 |:---:|:---:|
 | ![issue new](assets/issue-new.png) | ![issue list](assets/issue-list.png) |
 
-### PRベースでの開発
+### :arrow_forward: PRベースでの開発
 
 GitHub Flowでは、デフォルトブランチである `main` ブランチを**常に最新で問題がない（テストが通る）状態に保ち**、
 すべての新しい機能追加・修正を `main` ブランチから新しくブランチを派生させることで実装していきます。
