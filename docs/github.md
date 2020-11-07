@@ -15,7 +15,7 @@
 !!! important "Pull Request (PR) ベースでの開発"
 
     1. 実装する機能・修正の仕様を決めます（解決するIssueを決めます）。
-    1. `main` にチェックアウトし、リモートリポジトリから最新の変更を取り込みます。 `git switch main && git pull origin main`
+    1. `main` に移り、リモートリポジトリから最新の変更を取り込みます。 `git switch main && git pull origin main`
     2. 新しい機能を実装するブランチを `main` から作ります。 `git switch -c <branch name>`
     3. ブランチ上で機能を実装します。
         3. 変更を実装し、適宜コミットします。 `git add <file>` `git commit -m "<commit message>"`
@@ -33,7 +33,106 @@ GitHubは、最も広く使われているソフトウェア開発のプラッ�
 
 ## :orange_book: GitHubを用いた基本的な開発の流れ
 
-> [GitHub Flow (Japanese translation)](https://gist.github.com/Gab-km/3705015)
+Git/GitHubを用いた開発フローに、何か一つの正解があるというわけではありません。
+チームやプロジェクト毎に、それぞれの異なる開発フローやルールが存在するでしょう。
+ただし、基本的な開発フローを一つ学べば、プロジェクトやチームに加わったあとですぐにキャッチアップできるはずです。
+ここでは、シンプルかつよく知られたGit/GitHub上での開発フローである、GitHub Flowを参考に、GitHub上でのシンプルな開発の流れについて説明します。
+
+!!! quote ""
+
+    [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html) [[日本語訳](https://gist.github.com/Gab-km/3705015)]
+
+### :arrow_forward: Issueベースでのタスク管理
+
+何か必要な機能や修正がある場合、まず、新しいIssueを作ります。
+Issueには、
+
+1. 一体どんな新しい機能・修正が必要なのか
+2. なぜそれが必要なのか
+
+などを書くと良いでしょう（チームやプロジェクトによって、書くべき項目がより細かく決まっている場合もあります）。
+まずIssueに書くことによって、思いついた機能や修正をやみくもに思いついた順番に実装していくのではなく、
+タスクを整理してから優先順位やタスクの依存関係などに応じて実装していくことが可能になります。
+
+| [新しいIssueを作成する](https://github.com/sotetsuk/dev-beginner-tutorial/issues/new) | [投稿された未解決のIssueリスト](https://github.com/sotetsuk/dev-beginner-tutorial/issues) |
+|:---:|:---:|
+| ![issue new](assets/issue-new.png) | ![issue list](assets/issue-list.png) |
+
+### :arrow_forward: PRベースでの開発
+
+GitHub Flowでは、デフォルトブランチである `main` ブランチを**常に最新で問題がない（テストが通る）状態に保ち**、
+すべての新しい機能追加・修正を `main` ブランチから新しくブランチを派生させることで実装していきます。
+Issueの中から、解決すべきIssueを決め、何を実装すべきかが定まったら、まず `main` ブランチから新しいブランチを作成しましょう。
+
+まず、 `main` ブランチに移り、リモートブランチから最新の情報を取り込みます。
+
+```sh
+$ git switch main
+$ git pull origin main
+```
+
+更新できたら、実装をしていくブランチを新しく作ります。
+
+```sh
+$ git switch -c <new-branch-name>
+```
+
+ここで、ブランチ名はある程度、実装する機能や修正の内容がわかるよう心がけましょう。
+
+ブランチを切ったら、そこで実装をして、こまめにコミットをしていきます。コミットメッセージもある程度、
+どんな実装をしたのか分かるようにしていきましょう。
+
+```sh
+$ git add <file>
+$ git commit -m "<commit message>"
+```
+
+**最初のコミットの直後に**、ブランチをプッシュしてPull Request (PR) を作り、他のチームメンバに自分がどんなタスクに着手したのかを共有し、議論可能にします。
+
+```sh
+$ git push -u origin <new-branch-name>
+```
+
+PRの作成は、ブランチのプッシュ後、GitHubのサイトから行うことができます。
+PRの作成時には、タイトルと本文を入力します。
+タイトルは一言でどんなことをしたのか、本文は（もしあれば）関連するIssueや、その実装方法（解決方法）などについて言及しましょう。
+下の例では、[#52](https://github.com/sotetsuk/dev-beginner-tutorial/pull/52)のPRを新しく作成し、右図で言及されている[#46](https://github.com/sotetsuk/dev-beginner-tutorial/issues/46)のIssueを解決します。
+
+| [新しいPRを作成する](https://github.com/sotetsuk/dev-beginner-tutorial/compare) | [作成されたPR](https://github.com/sotetsuk/dev-beginner-tutorial/pull/52) |
+|:---:|:---:|
+| ![pr new](assets/pr-new.png) | ![pr](assets/pr.png) |
+
+!!! warning ""
+
+    GitHub上では、[#46](https://github.com/sotetsuk/dev-beginner-tutorial/issues/46)や[#52](https://github.com/sotetsuk/dev-beginner-tutorial/pull/52)のように、IssueやPRが#付きの連番で管理されています。
+
+!!! warning ""
+
+    GitHub上では、PRからIssueを関連付けすることができます（[プルリクエストをIssueにリンクする | GitHub Docs](https://docs.github.com/ja/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)）。
+    特に、`resolves` や `fix` といったキーワードを付けることで、そのPRがマージされたときに自動でIssueを閉じることができます。
+
+機能が完成したと思ったら、まず、このブランチに最新の `main` の更新を取り込みます。
+あなたが機能を実装している間に、他の誰かが新しい機能を `main` ブランチに実装し、それが競合しているかもしれないからです。
+
+```
+$ git fetch && git merge --no-ff origin/main
+```
+
+次に、そのプロジェクトで設定されている自動テストがきちんと通ることを確認します（[継続的インテグレーション](https://ja.wikipedia.org/wiki/%E7%B6%99%E7%B6%9A%E7%9A%84%E3%82%A4%E3%83%B3%E3%83%86%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3#:~:text=%E7%B6%99%E7%B6%9A%E7%9A%84%E3%82%A4%E3%83%B3%E3%83%86%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%81CI%EF%BC%88%E8%8B%B1,%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%A7%E3%81%82%E3%82%8B%E3%80%82)）。
+
+!!! warning ""
+
+    継続的インテグレーション (CI) の設定方法は次章で学びます。
+
+テストが通ったら、チーム開発であれば他のメンバにレビューをお願いし、レビューが通ったらマージをします（あるいは他のメンバにマージしてもらいます）。
+
+| レビュアをアサインする | PRをマージする |
+|:---:|:---:|
+| ![review](assets/review.png) | ![merge](assets/merge.png) |
+
+
+これが、新しい機能の追加・修正における一回のサイクルになります。
+このサイクルさえ覚えてしまえば、あとは同じことを繰り返すだけになります。
 
 ## :police_officer: Git/GitHubでの開発におけるルール
 
