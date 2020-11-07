@@ -93,7 +93,7 @@ $ git commit -m "<commit message>"
 $ git push -u origin <new-branch-name>
 ```
 
-PRの作成は、GitHubのサイトから行うことができます。
+PRの作成は、ブランチのプッシュ後、GitHubのサイトから行うことができます。
 PRの作成時には、タイトルと本文を入力します。
 タイトルは一言でどんなことをしたのか、本文は（もしあれば）関連するIssueや、その実装方法（解決方法）などについて言及しましょう。
 下の例では、[#52](https://github.com/sotetsuk/dev-beginner-tutorial/pull/52)のPRを新しく作成し、右図で言及されている[#46](https://github.com/sotetsuk/dev-beginner-tutorial/issues/46)のIssueを解決します。
