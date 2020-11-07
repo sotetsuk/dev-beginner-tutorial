@@ -33,7 +33,31 @@ GitHubは、最も広く使われているソフトウェア開発のプラッ�
 
 ## :orange_book: GitHubを用いた基本的な開発の流れ
 
-> [GitHub Flow (Japanese translation)](https://gist.github.com/Gab-km/3705015)
+Git/GitHubを用いた開発フローに、何か一つの正解があるというわけではありません。
+チームやプロジェクト毎に、それぞれの異なる開発フローやルールが存在するでしょう。
+ただし、基本的な開発フローを一つ学べば、プロジェクトやチームに加わったあとですぐにキャッチアップできるはずです。
+ここでは、シンプルかつよく知られたGit/GitHub上での開発フローである、GitHub Flowを参考に、GitHub上でのシンプルな開発の流れについて説明します。
+
+!!! quote ""
+
+    [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html) [[日本語訳](https://gist.github.com/Gab-km/3705015)]
+
+### Issueベースでのタスク管理
+
+何か必要な機能や修正がある場合、まず、新しいIssueを作ります。
+Issueには、
+
+1. 一体どんな新しい機能・修正が必要なのか
+2. なぜそれが必要なのか
+
+などを書くと良いでしょう（チームやプロジェクトによって、書くべき項目がより細かく決まっている場合もあります）。
+まずIssueに書くことによって、思いついた機能や修正をやみくもに思いついた順番に実装していくのではなく、
+タスクを整理してから優先順位やタスクの依存関係などに応じて実装していくことが可能になります。
+
+| [新しいIssueを作成する](https://github.com/sotetsuk/dev-beginner-tutorial/issues/new) | [投稿された未解決のIssueリスト](https://github.com/sotetsuk/dev-beginner-tutorial/issues) |
+|:---:|:---:|
+| ![issue new](assets/issue-new.png) | ![issue list](assets/issue-list.png) |
+
 
 ## :police_officer: Git/GitHubでの開発におけるルール
 
