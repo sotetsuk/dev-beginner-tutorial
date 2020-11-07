@@ -58,6 +58,46 @@ Issueには、
 |:---:|:---:|
 | ![issue new](assets/issue-new.png) | ![issue list](assets/issue-list.png) |
 
+### PRベースでの開発
+
+GitHub Flowでは、デフォルトブランチである `main` ブランチを**常に最新で問題がない（テストが通る）状態に保ち**、
+すべての新しい機能追加・修正を `main` ブランチから新しくブランチを派生させることで実装していきます。
+Issueの中から、解決すべきIssueを決め、何を実装すべきかが定まったら、まず `main` ブランチから新しいブランチを作成しましょう。
+
+まず、 `main` ブランチに移り、リモートブランチから最新の情報を取り込みます。
+
+```sh
+$ git switch main
+$ git pull origin main
+```
+
+更新できたら、実装をしていくブランチを新しく作ります。
+
+```sh
+$ git switch -c <new-branch-name>
+```
+
+ここで、ブランチ名はある程度、実装する機能や修正の内容がわかるよう心がけましょう。
+
+ブランチを切ったら、そこで実装をして、こまめにコミットをしていきます。コミットメッセージもある程度、
+どんな実装をしたのか分かるようにしていきましょう。
+
+```sh
+$ git add <file>
+$ git commit -m "<commit message>"
+```
+
+最初のコミットのあとに、ブランチをプッシュしてPull Request (PR) を作り、他のチームメンバに状況を共有し、議論可能にします。
+
+```sh
+$ git push -u origin <new-branch-name>
+```
+
+PRの作成は、GitHubのサイトから行うことができます。
+
+![issue list](assets/pr.png)
+
+
 
 ## :police_officer: Git/GitHubでの開発におけるルール
 
