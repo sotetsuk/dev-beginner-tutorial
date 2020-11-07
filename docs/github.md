@@ -15,7 +15,7 @@
 !!! important "Pull Request (PR) ベースでの開発"
 
     1. 実装する機能・修正の仕様を決めます（解決するIssueを決めます）。
-    1. `main` にチェックアウトし、リモートリポジトリから最新の変更を取り込みます。 `git switch main && git pull origin main`
+    1. `main` に移り、リモートリポジトリから最新の変更を取り込みます。 `git switch main && git pull origin main`
     2. 新しい機能を実装するブランチを `main` から作ります。 `git switch -c <branch name>`
     3. ブランチ上で機能を実装します。
         3. 変更を実装し、適宜コミットします。 `git add <file>` `git commit -m "<commit message>"`
