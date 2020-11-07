@@ -94,10 +94,22 @@ $ git push -u origin <new-branch-name>
 ```
 
 PRの作成は、GitHubのサイトから行うことができます。
+PRの作成時には、タイトルと本文を入力します。
+タイトルは一言でどんなことをしたのか、本文は（もしあれば）関連するIssueや、その実装方法（解決方法）などについて言及しましょう。
+下の例では、[#52](https://github.com/sotetsuk/dev-beginner-tutorial/pull/52)のPRを新しく作成し、右図で言及されている[#46](https://github.com/sotetsuk/dev-beginner-tutorial/issues/46)のIssueを解決します。
 
-![issue list](assets/pr.png)
+| [新しいPRを作成する](https://github.com/sotetsuk/dev-beginner-tutorial/issues/new) | [作成されたPR](https://github.com/sotetsuk/dev-beginner-tutorial/issues) |
+|:---:|:---:|
+| ![pr new](assets/pr-new.png) | ![pr](assets/pr.png) |
 
+!!! warning ""
 
+    GitHub上では、[#46](https://github.com/sotetsuk/dev-beginner-tutorial/issues/46)や[#52](https://github.com/sotetsuk/dev-beginner-tutorial/pull/52)のように、IssueやPRが#付きの連番で管理されています。
+
+!!! warning ""
+
+    GitHub上では、PRからIssueを関連付けすることができます（[プルリクエストをIssueにリンクする | GitHub Docs](https://docs.github.com/ja/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)）。
+    特に、`resolves` や `fix` といったキーワードを付けることで、そのPRがマージされたときに自動でIssueを閉じることができます。
 
 ## :police_officer: Git/GitHubでの開発におけるルール
 
