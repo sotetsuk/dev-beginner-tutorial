@@ -173,7 +173,18 @@ $ git fetch && git merge --no-ff origin/main
 
 ## :book: TIPS
 
-絶対というわけではないが、よく見かけるある程度合理的なTIPSです。
+絶対にこうした方がいい、というわけではないが、一定の利便性と合理性がある項目について説明します。
+
+!!! tip "コミットメッセージにpefixをつける"
+
+    コミットメッセージの先頭に次のようなprefixを加えることで視認性が高まることが期待できます。
+
+    - `feat: `
+    - `fix: `
+    - `refactor: `
+    - `docs: `
+
+    > [【今日からできる】コミットメッセージに 「プレフィックス」 をつけるだけで、開発効率が上がった話 | Qiita](https://qiita.com/numanomanu/items/45dd285b286a1f7280ed)
 
 !!! tip "Mergeを "Squash And Merge" にする"
 
