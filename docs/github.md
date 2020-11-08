@@ -186,7 +186,17 @@ $ git fetch && git merge --no-ff origin/main
 
     > [【今日からできる】コミットメッセージに 「プレフィックス」 をつけるだけで、開発効率が上がった話 | Qiita](https://qiita.com/numanomanu/items/45dd285b286a1f7280ed)
 
-!!! tip "Mergeを "Squash And Merge" にする"
+!!! tip "PRのMergeを "Squash And Merge" にする"
+
+    後から `main` ブランチの履歴を見たとき、全ての変更にPRが紐付いており、そこからIssueに辿りやすくなっている。
+    ひとつひとつのcommit messageにはそこまで気を使う必要がなくなる。
+
+    ![deno](assets/deno.png)
+
+    !!! example ""
+
+    - [github.com/denoland/deno](https://github.com/denoland/deno/commits/master)
+    - [github.com/pytorch/pytorch](https://github.com/pytorch/pytorch)
 
 !!! tip "ブランチ名に作業者の名前や変更の種類を先頭につける"
 
