@@ -196,6 +196,16 @@ $ git fetch && git merge --no-ff origin/main
     - `sotetsuk/refactor/remove-comments`
     - `sotetsuk/docs/how-to-use`
 
+!!! tip "まだ実装途中のPRにWIPとprefixをつけたり、Draft Pull Requestにする"
+
+    まだPRの実装が完了していないことを明示的にするために、タイトルに `[WIP]` や　`WIP: ` のようなprefixをつける慣習があります。
+    また、代わりにGitHubのDraft Pull Request機能を使うこともできます（公開リポジトリやPROユーザーの場合）。
+    これによって、他の開発メンバーが、そのPRはまだレビューやマージの必要がないことを素早く判断できます。
+    ただし、実装が完了したあとにレビュアーをアサインするようにしている場合、必須の慣習ではないと思いますが、明示的にしたい場合は良いかもしれません。
+    タイトルにprefixを付ける場合は、外し忘れに注意しましょう。
+
+    > [Draft Pull Requestをリリースしました | GitHubブログ](https://github.blog/jp/2019-02-19-introducing-draft-pull-requests/)
+
 ## :dizzy: オススメの設定
 
 設定ファイル `~/.gitconfig` を次のように編集してみましょう。
