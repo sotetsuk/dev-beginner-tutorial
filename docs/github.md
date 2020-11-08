@@ -4,8 +4,6 @@
 
 はじめに、ここで学ぶことの結論をまとめてしまいます。GitHub上では、**Issueベースでのタスク管理**と、**Pull Request (PR) ベースでの開発**を行います。
     
-[![issue](assets/issue.png)](https://github.com/sotetsuk/dev-beginner-tutorial/issues)
-
 !!! important "Issueベースでのタスク管理"
 
     何か必要な機能や修正があれば、まずIssueを作成して「なぜこの機能・修正が必要なのか」「その仕様は何なのか」を書き出します。
