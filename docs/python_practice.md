@@ -1,6 +1,5 @@
 # Python総合演習
 ここでは、今でに学習したUNIXコマンド、Python、Git/GitHubを活用した実際の開発の演習を行います。
-また、
 
 ## :orange_book:  Pythonを使ったパッケージ・CLIコマンド開発
 
