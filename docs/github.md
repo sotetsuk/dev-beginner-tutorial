@@ -23,7 +23,7 @@
 
     !!! warning ""
 
-        ここでは、他ユーザーのリポジトリをForkするタイプのPRではなく、同じリポジトリを共有してその中だけで完結するPRを想定しています。
+        ここでは、他ユーザーのリポジトリを[ForkするタイプのPR](https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)ではなく、同じリポジトリを共有してその中だけで完結するPRを想定しています。
 
 
 
@@ -228,19 +228,19 @@ $ git fetch && git merge --no-ff origin/main
 
 ## :pencil: 演習
 
-このドキュメント自体もGitHub上で書かれています :fontawesome-brands-github: 
+:white_check_mark: 自分でGitHubでリポジトリを作ってみて、IssueやPRを作ってみましょう。
+
+!!! quote ""
+
+    [リポジトリを作成する | GitHub Docs](https://docs.github.com/ja/free-pro-team@latest/github/getting-started-with-github/create-a-repo)
+
+:white_check_mark: このドキュメント自体もGitHub上で書かれています。 
+このドキュメントのリポジトリに、実際にPRを作成して送ってみましょう。
+[index.md](https://github.com/sotetsuk/dev-beginner-tutorial/blob/main/docs/index.md)の足跡に自分のGitHubのアイコンを追加してみましょう。@sotetsukにこのリポジトリのcollaboratorに追加してもらうか、このリポジトリを[ForkしてPR](https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)を送って見て下さい。@sotetsukと面識がなくても気にせず送ってもらって構いません。
 
 !!! important ""
 
     [github.com/sotetsuk/dev-beginner-tutorial](https://github.com/sotetsuk/dev-beginner-tutorial)
-
-:white_check_mark: このドキュメントのリポジトリに、実際にPRを作成して送ってみましょう。
-[index.md](https://github.com/sotetsuk/dev-beginner-tutorial/blob/main/docs/index.md)の足跡に自分のGitHubのアイコンを追加してみましょう。@sotetsukにこのリポジトリのcollaboratorに追加してもらうか、このリポジトリをForkしてPRを送って見て下さい。
-
-!!! quote ""
-
-    - [Github で Fork して PullRequest を送るのはこんなに簡単](https://qiita.com/YumaInaura/items/acff806290c8953d3185)
-    - [GitHub初心者はForkしない方のPull Requestから入門しよう](https://blog.qnyp.com/2013/05/28/pull-request-for-github-beginners/)
 
 :white_check_mark: また、このチュートリアル自体のコンテンツについても修正点を考えてIssueやPRを送ってみましょう。
 例えば、次のようなPRを送ってみて下さい。
