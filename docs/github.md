@@ -161,7 +161,7 @@ $ git fetch && git merge --no-ff origin/main
 
 !!! failure "ブランチの再利用をしない"
 
-    ある機能Aのために切って、既に `main` にマージされたブランチAを、別の機能Bのために再利用するのはやめましょう。
+    ある機能Aのために切って、既に `main` にマージされたブランチAを、全く別の機能Bのためにそのまま再利用するのはやめましょう。
     かならず最新の `main` から新しいブランチBを切って下さい。
 
 !!! failure "ビルドやテストが通ってないブランチを `main` にマージしようとしない"
@@ -219,29 +219,6 @@ $ git fetch && git merge --no-ff origin/main
     タイトルにprefixを付ける場合は、外し忘れに注意しましょう。
 
     > [Draft Pull Requestをリリースしました | GitHubブログ](https://github.blog/jp/2019-02-19-introducing-draft-pull-requests/)
-
-## :dizzy: オススメの設定
-
-設定ファイル `~/.gitconfig` を次のように編集してみましょう。
-
-```yaml
-[user]
-    name = <YOUR NAME>
-    email = <YOUR E-MAIL>
-[alias]
-    sw = switch
-    br = branch
-[push]
-    default = current
-[merge]
-    ff = false
-[pull]
-    ff = only
-```
-
-!!! quote ""
-    - [gitのpush.defaultに関するノウハウ | Qiita](https://qiita.com/awakia/items/6aaea1ffecba725be601)
-    - [git merge 時は必ずマージコミットを作るようにする | Hatena blog](https://neos21.hatenablog.com/entry/2017/06/18/080000)
 
 ## :pencil: 演習
 
