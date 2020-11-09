@@ -21,6 +21,12 @@
     5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込みます。 `git fetch && git merge --no-ff origin/main` （競合が発生した場合は解決する）
     6. レビューを経てPRを `main` に "Squash And Merge" でマージします。
 
+    !!! warning ""
+
+        ここでは、他ユーザーのリポジトリをForkするタイプのPRではなく、同じリポジトリを共有してその中だけで完結するPRを想定しています。
+
+
+
 ## :question: なぜGitHubの使い方を学ぶのか？
 
 GitHubは、最も広く使われているソフトウェア開発のプラットフォームです。
@@ -229,7 +235,12 @@ $ git fetch && git merge --no-ff origin/main
     [github.com/sotetsuk/dev-beginner-tutorial](https://github.com/sotetsuk/dev-beginner-tutorial)
 
 :white_check_mark: このドキュメントのリポジトリに、実際にPRを作成して送ってみましょう。
-[index.md](https://github.com/sotetsuk/dev-beginner-tutorial/blob/main/docs/index.md)の足跡に自分のGitHubのアイコンを追加してみましょう。
+[index.md](https://github.com/sotetsuk/dev-beginner-tutorial/blob/main/docs/index.md)の足跡に自分のGitHubのアイコンを追加してみましょう。@sotetsukにこのリポジトリのcollaboratorに追加してもらうか、このリポジトリをForkしてPRを送って見て下さい。
+
+!!! quote ""
+
+    - [Github で Fork して PullRequest を送るのはこんなに簡単](https://qiita.com/YumaInaura/items/acff806290c8953d3185)
+    - [GitHub初心者はForkしない方のPull Requestから入門しよう](https://blog.qnyp.com/2013/05/28/pull-request-for-github-beginners/)
 
 :white_check_mark: また、このチュートリアル自体のコンテンツについても修正点を考えてIssueやPRを送ってみましょう。
 例えば、次のようなPRを送ってみて下さい。
