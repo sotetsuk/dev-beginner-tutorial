@@ -186,17 +186,21 @@ $ git fetch && git merge --no-ff origin/main
 
     > [【今日からできる】コミットメッセージに 「プレフィックス」 をつけるだけで、開発効率が上がった話 | Qiita](https://qiita.com/numanomanu/items/45dd285b286a1f7280ed)
 
-!!! tip "PRのMergeを "Squash And Merge" にする"
+!!! tip "PRのマージを `Squash and merge` にする"
 
-    後から `main` ブランチの履歴を見たとき、全ての変更にPRが紐付いており、そこからIssueに辿りやすくなっている。
-    ひとつひとつのcommit messageにはそこまで気を使う必要がなくなる。
-
-    ![deno](assets/deno.png)
+    GitHubにおける開発でPRが機能追加・変更の最小単位であることを踏まえると、 `main` にマージする際、PRに紐付いたコミットを全てsquashしてひとつのマージコミットを作るのも合理的な選択の一つです。
+    こうすると、後から `main` ブランチの履歴を見たとき、全ての変更にPRがひとつ紐付いており、そこからさらにIssueに辿りやすくなっているというメリットがあります。
+    また、ひとつひとつのcommit messageは `main` の履歴には映らなくなるので、はそこまで気を使う必要がなくなるというのも利点です。
+    実際、いくつかの有名OSSはこの方針を採用しています。
 
     !!! example ""
 
-    - [github.com/denoland/deno](https://github.com/denoland/deno/commits/master)
-    - [github.com/pytorch/pytorch](https://github.com/pytorch/pytorch)
+        - [github.com/denoland/deno](https://github.com/denoland/deno/commits/master)
+        - [github.com/pytorch/pytorch](https://github.com/pytorch/pytorch)
+
+    | "Squash and merge" ボタン | [github.com/denoland/deno](https://github.com/denoland/deno/commits/master) |
+    |:---:|:---:|
+    | ![squash-merge](assets/squash-merge.png) | ![deno](assets/deno.png) |
 
 !!! tip "ブランチ名に作業者の名前や変更の種類を先頭につける"
 
