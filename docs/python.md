@@ -47,7 +47,7 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
 === "Windows"
 
     PyCharmをインストールした後、新しいプロジェクトを作成してみてテストしてみましょう。
-    New Projectを選択肢、次の画面を参考に、virtualenvを使ってPythonインタプリタを使うようにしてください。
+    New Projectを選択し、次の画面を参考に、virtualenvを使ってPythonインタプリタを使うようにしてください。
 
     ![newproject](assets/newproject.png)
 
@@ -56,7 +56,7 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
 
     ![pyrun](assets/pyrun.png)
 
-    最後に、設定から改行コードをUNIXに揃えるよう設定して下さい。
+    最後に、**設定から改行コードをUNIXに揃えるよう設定して下さい。**
 
     ![linesep](assets/linesep.png)
 
