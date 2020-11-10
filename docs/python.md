@@ -40,6 +40,27 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
     
     WindowsではUNIXコマンドの学習のときにインストールしたWSLと連携して使って下さい。[SSH を使用して WSL ベースのリモートインタープリターを作成する | PyCharm](https://pleiades.io/help/pycharm/using-wsl-as-a-remote-interpreter-1.html)
 
+=== "Mac"
+
+    PyCharmをインストールした後、新しいプロジェクトを作成してみてテストしてみましょう。
+
+=== "Windows"
+
+    PyCharmをインストールした後、新しいプロジェクトを作成してみてテストしてみましょう。
+    New Projectを選択肢、次の画面を参考に、virtualenvを使ってPythonインタプリタを使うようにしてください。
+
+    ![newproject](assets/newproject.png)
+
+    このとき、Pythonのインタプリタがないと言われた場合、エラーメッセージにしたがって、Microsoft storeからPython3.9（あるいは3.8）をインストールして下さい。
+    Pythonインストール後、緑色の三角の実行ボタンを押してみて、Pythonが動くことを確認しましょう。
+
+    ![pyrun](assets/pyrun.png)
+
+    最後に、設定から改行コードをUNIXに揃えるよう設定して下さい。
+
+    ![linesep](assets/linesep.png)
+
+
 ## :orange_book: 学習教材
 
 次の教材から好きなものを選んでPythonの文法とプログラミングの基礎について勉強しましょう。**2.3.4.のどれか一つ**選択して学習してみましょう。

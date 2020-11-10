@@ -45,9 +45,25 @@ App Storeに行くと、アプリケーションのバージョンが明示さ�
     2. もしなければ [Homebrew](https://brew.sh/) を使って `$ brew install git`
 
 === "Windows"
+    Ubuntu上と、Windows上（とくにPyCharmから）Gitが使えるよう設定していきます。
+    
+    **Ubuntu**
 
     1. WSLのUbuntu上で `git` がインストールされていることを確認してください: `$ which git`
     2. もしなければ `$ sudo apt-get install git`
+
+    **Windows**
+
+    また、Ubuntu内だけでなく、PyCharm上でもGitが使えるよう[gitforwindows.org/](https://gitforwindows.org/)でインストールして下さい。
+    インストール時の設定で、改行コードだけ、変換しないようにして下さい（`Checkout as-is, commit as-is` を選択）。
+
+    また、PyCharmからGit Bashを使うよう設定して下さい。
+    
+    ![use-git-bash](assets/use-git-bash.png)
+
+    設定したら、プロジェクトを開いて、Git Bashが使えるようになっているか確認して下さい。
+
+    ![run-git-bash](assets/run-git-bash.png)
 
 ## :orange_book: 学習教材
 どれか一つを選択してGitの基本的な操作について学習しましょう。
