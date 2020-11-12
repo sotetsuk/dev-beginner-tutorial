@@ -63,7 +63,7 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
 
 ## :orange_book: 学習教材
 
-次の教材から好きなものを選んでPythonの文法とプログラミングの基礎について勉強しましょう。**2.3.4.のどれか一つ**選択して学習してみましょう。
+次の教材から好きなものを選んでPythonの文法とプログラミングの基礎について勉強しましょう。**2.3.4.5.のどれか一つ**選択して学習してみましょう。
 
 1. [はじめてのPython | ドットインストール](https://dotinstall.com/lessons/basic_python_v4) （有料）
     - このドットインストールのコースは90分もかからないと思うので、短時間で達成感が得られると思います。基本的にこの教材で素早く全体像を掴んでから2.3.4.のどれかで本格的に勉強していくのが良いと思います。
@@ -73,6 +73,8 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
     - ビデオなしの教材なので、1.を勉強した後であれば適宜読み飛ばして行けると思います。GUIのプログラミングや、Tic-Tac-Toeを作るといった面白い題材が多い。
 4. [Introduction to Computer Science and Programming in Python | MIT OpenCourseWare](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
     - 英語が問題ない方はこちらがオススメです。より本格的なコンピュータサイエンス入門になっています。
+5. [Python3入門 | ドットインストール](https://dotinstall.com/lessons/basic_python_v3)（有料）
+    - ドットインストールのより詳細なPython入門です。有料ですが、文法だけ学ぶという観点ではこれが一番いいかなと思います。
 
 ## :pencil: 演習
 
