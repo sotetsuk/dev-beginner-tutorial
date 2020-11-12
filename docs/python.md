@@ -82,4 +82,17 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
 
 :white_check_mark: [AtCoder Beginners Selection | AtCoder](https://atcoder.jp/contests/abs/tasks) の問題をPythonで解いてみましょう。
 
+:white_check_mark: [アルゴリズム実技検定 (PAST)](https://past.atcoder.jp/) の過去問題を解いてPythonで解いてみましょう。
+
+- [第一回 アルゴリズム実技検定](https://atcoder.jp/contests/past201912-open) のA~F（計6問）
+- [第二回 アルゴリズム実技検定](https://atcoder.jp/contests/past202004-open) のA~F（計6問）
+- [第三回 アルゴリズム実技検定](https://atcoder.jp/contests/past202005-open) のA~F（計6問）
+- [第四回 アルゴリズム実技検定](https://atcoder.jp/contests/past202010-open) のA~F（計6問）
+
+!!! warning "追加で必要な知識"
+
+    - [itertools.permutations | docs.python.org](https://docs.python.org/ja/3/library/itertools.html#itertools.permutations) - 順列の列挙が行えます。
+    - [heapq | docs.python.org](https://docs.python.org/ja/3/library/heapq.html) - どのようなデータ構造か、自分で調べてみましょう。
+
+
 :white_check_mark: 前回、UNIXコマンドで実行した[第2章: UNIXコマンド | 言語処理100本ノック](https://nlp100.github.io/ja/)の問題を、今度はPythonで実装、実行してみましょう。
