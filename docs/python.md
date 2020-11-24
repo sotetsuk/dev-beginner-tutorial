@@ -80,7 +80,7 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
 
 これらの演習問題を通じて、基本的な制御構文やデータ構造 (`if`, `for`, `while`, `list`, `dict`, `set`) が使いこなせるか確認しましょう。
 
-:white_check_mark: [AtCoder Beginners Selection | AtCoder](https://atcoder.jp/contests/abs/tasks) の問題をPythonで解いてみましょう。
+:white_check_mark: [AtCoder Beginners Selection | AtCoder](https://atcoder.jp/contests/abs/tasks) の問題10問をPythonで解いてみましょう。
 
 :white_check_mark: [アルゴリズム実技検定 (PAST)](https://past.atcoder.jp/) の過去問題を解いてPythonで解いてみましょう。
 
@@ -88,6 +88,8 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
 - [第二回 アルゴリズム実技検定](https://atcoder.jp/contests/past202004-open) のA~F（計6問）
 - [第三回 アルゴリズム実技検定](https://atcoder.jp/contests/past202005-open) のA~F（計6問）
 - [第四回 アルゴリズム実技検定](https://atcoder.jp/contests/past202010-open) のA~F（計6問）
+
+これは第一回A, 第二回A, ... という順番で解いていくのがいいかと思います。
 
 !!! warning "追加で必要な知識"
 
