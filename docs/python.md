@@ -99,4 +99,18 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
     - [heapq | docs.python.org](https://docs.python.org/ja/3/library/heapq.html) - どのようなデータ構造か、自分で調べてみましょう（第2回F）
 
 
-:white_check_mark: 前回、UNIXコマンドで実行した[第2章: UNIXコマンド | 言語処理100本ノック](https://nlp100.github.io/ja/)の問題を、今度はPythonで実装、実行してみましょう。
+:white_check_mark: 前回、UNIXコマンドで実行した[第2章: UNIXコマンド | 言語処理100本ノック](https://nlp100.github.io/ja/ch02.html)の問題を、今度はPythonで実装、実行してみましょう。
+
+
+コマンドを作ると言っても、あまり凝ったものにする必要はなく、例えば最初の問題なら次のような回答で大丈夫です。
+
+```
+import sys
+
+file_name = sys.argv[1]
+cnt = 0
+with open(file_name, "r") as f:
+    for line in f:
+        cnt += 1
+print(cnt)
+```
