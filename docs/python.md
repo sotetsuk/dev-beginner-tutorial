@@ -93,8 +93,10 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
 
 !!! warning "追加で必要な知識"
 
-    - [itertools.permutations | docs.python.org](https://docs.python.org/ja/3/library/itertools.html#itertools.permutations) - 順列の列挙が行えます。
-    - [heapq | docs.python.org](https://docs.python.org/ja/3/library/heapq.html) - どのようなデータ構造か、自分で調べてみましょう。
+    上記の問題は基本的に基本的なPythonの知識だけで解ける問題のはずですが、いくつかの問題は、以下のような追加の知識が必要か、あると簡単に解くことが出来ます。確認してみましょう。
+
+    - [itertools.permutations | docs.python.第4回Eorg](https://docs.python.org/ja/3/library/itertools.html#itertools.permutations) - 順列の列挙が行えます（第4回E）
+    - [heapq | docs.python.org](https://docs.python.org/ja/3/library/heapq.html) - どのようなデータ構造か、自分で調べてみましょう（第2回F）
 
 
 :white_check_mark: 前回、UNIXコマンドで実行した[第2章: UNIXコマンド | 言語処理100本ノック](https://nlp100.github.io/ja/)の問題を、今度はPythonで実装、実行してみましょう。
