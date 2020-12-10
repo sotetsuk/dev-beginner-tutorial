@@ -82,6 +82,7 @@ App Storeに行くと、アプリケーションのバージョンが明示さ�
 !!! check "ワーキングディレクトリ | ステージングエリア | リポジトリ"
 
     これら3つの領域の違いを理解できているか確認しましょう。
+	参考: [gitのfetchとpullの違いについて](http://www.koikikukan.com/archives/2019/02/15-000300.php)
 
 !!! check "git pull | git fetch | git merge"
 
