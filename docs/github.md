@@ -236,7 +236,8 @@ $ git fetch && git merge --no-ff origin/main
 
 :white_check_mark: このドキュメント自体もGitHub上で書かれています。 
 このドキュメントのリポジトリに、実際にPRを作成して送ってみましょう。
-[index.md](https://github.com/sotetsuk/dev-beginner-tutorial/blob/main/docs/index.md)の足跡に自分のGitHubのアイコンを追加してみましょう。@sotetsukにこのリポジトリのcollaboratorに追加してもらうか、このリポジトリを[ForkしてPR](https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)を送って見て下さい。@sotetsukと面識がなくても気にせず送ってもらって構いません。
+このページの一番下の「足跡」に自分のGitHubのアイコンを追加してみましょう。
+@sotetsukにこのリポジトリのcollaboratorに追加してもらうか、このリポジトリを[ForkしてPR](https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)を送って見て下さい。@sotetsukと面識がなくても気にせず送ってもらって構いません。
 
 !!! important ""
 
@@ -261,3 +262,7 @@ $ git fetch && git merge --no-ff origin/main
 特に、一人で開発しているうちは、常に `main` ブランチで、`git add/commit` と `git push origin master` を繰り返す方が楽に感じられるかもしれません。
 実際、一人だけの小規模開発の序盤は、その方が勢いがでるという側面も否定できないと思いますし、その開発手順で問題ないと思います。
 一人だけの開発でも、リポジトリがある程度習熟してくると、ここで書いたようなPRを使った開発が便利になってきますが、**あくまで適材適所**で合理的な運用ができるようにしましょう。
+
+## :footprints: 足跡
+
+<a href="https://github.com/sotetsuk"><img src="https://github.com/sotetsuk.png" height="auto" width="50" style="border-radius:50%"></a>
