@@ -239,11 +239,16 @@ $ git fetch && git merge --no-ff origin/main
 練習として、このページの一番下の「足跡」に自分のGitHubのアイコンを追加するような変更をして、PRを送ってみましょう。
 @sotetsukにこのリポジトリのcollaboratorに追加してもらうか、このリポジトリを[ForkしてPR](https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)を送って見て下さい。@sotetsukと面識がなくても気にせず送ってもらって構いません。
 
-!!! important ""
+!!! important "このドキュメントのGitHubリポジトリ"
 
     [github.com/sotetsuk/dev-beginner-tutorial](https://github.com/sotetsuk/dev-beginner-tutorial)
 
-!!! warning ""
+!!! quote "GitHubの操作方法"
+
+    - [リポジトリをクローンする | GitHub Docs](https://docs.github.com/ja/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+    - [フォークからプルリクエストを作成する | GitHub Docs](https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)
+
+!!! warning "注意"
 
 	PRのマージはリポジトリ管理者にレビューをお願いしてからにしましょう。
 
@@ -270,10 +275,7 @@ $ git fetch && git merge --no-ff origin/main
 ## :footprints: 足跡
 
 <a href="https://github.com/sotetsuk"><img src="https://github.com/sotetsuk.png" height="auto" width="50" style="border-radius:50%"></a>
-
 <a href="https://github.com/pyopyai"><img src="https://github.com/pyopyai.png" height="auto" width="50" style="border-radius:50%"></a>
-
 <a href="https://github.com/Hisokalalala"><img src="https://github.com/Hisokalalala.png" height="auto" width="50" style="border-radius:50%"></a>
-
+<a href="https://github.com/OkanoShinri"><img src="https://github.com/OkanoShinri.png" height="auto" width="50" style="border-radius:50%"></a>
 <a href="https://github.com/youyou-ku"><img src="https://github.com/youyou-ku.png" height="auto" width="50" style="border-radius:50%"></a>
-
