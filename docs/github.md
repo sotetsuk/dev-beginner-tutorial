@@ -236,12 +236,16 @@ $ git fetch && git merge --no-ff origin/main
 
 :white_check_mark: このドキュメント自体もGitHub上で書かれています。 
 このドキュメントのリポジトリに、実際にPRを作成して送ってみましょう。
-このページの一番下の「足跡」に自分のGitHubのアイコンを追加してみましょう。
+練習として、このページの一番下の「足跡」に自分のGitHubのアイコンを追加するような変更をして、PRを送ってみましょう。
 @sotetsukにこのリポジトリのcollaboratorに追加してもらうか、このリポジトリを[ForkしてPR](https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)を送って見て下さい。@sotetsukと面識がなくても気にせず送ってもらって構いません。
 
 !!! important ""
 
     [github.com/sotetsuk/dev-beginner-tutorial](https://github.com/sotetsuk/dev-beginner-tutorial)
+
+!!! warning ""
+
+	PRのマージはリポジトリ管理者にレビューをお願いしてからにしましょう。
 
 :white_check_mark: また、このチュートリアル自体のコンテンツについても修正点を考えてIssueやPRを送ってみましょう。
 例えば、次のようなPRを送ってみて下さい。
