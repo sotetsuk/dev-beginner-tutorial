@@ -270,9 +270,6 @@ $ git fetch && git merge --no-ff origin/main
 ## :footprints: 足跡
 
 <a href="https://github.com/sotetsuk"><img src="https://github.com/sotetsuk.png" height="auto" width="50" style="border-radius:50%"></a>
-
 <a href="https://github.com/pyopyai"><img src="https://github.com/pyopyai.png" height="auto" width="50" style="border-radius:50%"></a>
-
 <a href="https://github.com/Hisokalalala"><img src="https://github.com/Hisokalalala.png" height="auto" width="50" style="border-radius:50%"></a>
-
 <a href="https://github.com/OkanoShinri"><img src="https://github.com/OkanoShinri.png" height="auto" width="50" style="border-radius:50%"></a>
