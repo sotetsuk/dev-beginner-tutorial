@@ -14,6 +14,7 @@ nav:
     - 5. Python総合演習: python_practice.md
     - 6. C++入門: cpp.md
     - 7. おわりに: conclusion.md
+    - 8. （補足）ディープラーニング: deep_learning.md
 theme:
   name: material
   language: ja
