@@ -114,3 +114,10 @@ with open(file_name, "r") as f:
         cnt += 1
 print(cnt)
 ```
+
+## :pencil: 追加演習 (optional)
+
+問題演習が足りないと感じる人は、AtCoderで引き続き過去問題を解いて見て下さい。
+AtCoder Beginner Contest (ABC) の新形式（ABC126~)のA, B, C問題を高速に解けるよう練習してみて下さい。
+
+過去問題一覧は[AtCoder Problems](https://kenkoooo.com/atcoder/#/table/)から確認できます。
