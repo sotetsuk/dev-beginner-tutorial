@@ -18,8 +18,9 @@
     3. ブランチ上で機能を実装します。
         3. 変更を実装し、適宜コミットします。 `git add <file>` `git commit -m "<commit message>"`
         4. 適宜プッシュします。 `git push -u origin <branch name>` 特に、最初のコミット直後には一度プッシュしてPRを作り、Issueと関連付けます。
-    5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込みます。 `git fetch && git merge --no-ff origin/main` （競合が発生した場合は解決する）
-    6. レビューを経てPRを `main` に "Squash And Merge" でマージします。
+    5. 機能が完成したら、レビュー前に最新の `origin/main` を取り込みます。 `git fetch && git merge --no-ff origin/main` （競合が発生した場合はここで解決する）
+    6. 他のメンバーにPRがマージ可能な状態であることを伝えます（レビューリクエストを送ったり、コメントにその旨を書き込む）
+    7. 必要な自他からのレビューを経て、PRを `main` に "Squash And Merge" でマージします。
 
     !!! warning ""
 
