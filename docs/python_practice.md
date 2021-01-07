@@ -22,10 +22,11 @@
 ## :orange_book:  Pythonで簡易ニューラルネットワーク開発
 人工知能技術の発展は目覚ましく、ニューラルネットワークの仕組みを理解することも、エンジニアにとってある種の必修科目となりつつあります。簡略化されたニューラルネットワークライブラリを自作してみて、その中身を知りましょう。
 
+## :pencil: 演習 
 
 [github.com/joelgrus/joelnet](https://github.com/joelgrus/joelnet)のリポジトリ内容をビデオを見ながら自分で再構築して、簡易ニューラルネットワークライブラリを作ってみましょう。
 
-## :pencil: 演習
+## :pencil: 追加演習 (optional)
 
 :white_check_mark: 自分で再構築した簡易ニューラルネットワークライブラリで、手書き文字認識の分類をやってみよう。 ([Recognizing hand-written digits](https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html))
 
