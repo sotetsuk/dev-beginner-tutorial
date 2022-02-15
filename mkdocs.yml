@@ -15,6 +15,7 @@ nav:
     - 6. C++入門: cpp.md
     - 7. おわりに: conclusion.md
     - 8. （補足）ディープラーニング: deep_learning.md
+    - 9. （補足）強化学習: reinforcement_learning.md
 theme:
   name: material
   language: ja
