@@ -67,7 +67,7 @@ PyCharmは非常に高性能なローカルマシンでの統合開発環境で�
 
 1. [はじめてのPython | ドットインストール](https://dotinstall.com/lessons/basic_python_v4) （有料）
     - このドットインストールのコースは90分もかからないと思うので、短時間で達成感が得られると思います。基本的にこの教材で素早く全体像を掴んでから2.3.4.のどれかで本格的に勉強していくのが良いと思います。
-2. [Pythonプログラミング入門 #utpython | 東京大学 数理・情報教育研究センター ](https://sites.google.com/view/ut-python/resource/%E6%95%99%E6%9D%90%E8%AC%9B%E7%BE%A9%E5%8B%95%E7%94%BB)
+2. [Pythonプログラミング入門 #utpython | 東京大学 数理・情報教育研究センター ](https://sites.google.com/view/ut-python)
     - Colab上だけで簡潔するので、Python文法やプログラミングの基礎についてのみ集中できる。
 3. [プログラミング演習 Python 2019 | 京都大学学術情報リポジトリ KURENAI 紅](https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/245698)
     - ビデオなしの教材なので、1.を勉強した後であれば適宜読み飛ばして行けると思います。GUIのプログラミングや、Tic-Tac-Toeを作るといった面白い題材が多い。
