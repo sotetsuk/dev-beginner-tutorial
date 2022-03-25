@@ -202,7 +202,7 @@ $ git fetch && git merge --no-ff origin/main
 
     !!! example ""
 
-        - [github.com/denoland/deno](https://github.com/denoland/deno/commits/master)
+        - [github.com/denoland/deno](https://github.com/denoland/deno)
         - [github.com/pytorch/pytorch](https://github.com/pytorch/pytorch)
 
     | "Squash and merge" ボタン | [github.com/denoland/deno](https://github.com/denoland/deno/commits/master) |
