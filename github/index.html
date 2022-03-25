@@ -1,0 +1,937 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dev beginner tutorial">
+      
+      
+        <meta name="author" content="Sotetsu KOYAMADA">
+      
+      
+        <link rel="canonical" href="http://sotets.uk/dev-beginner-tutorial/github/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.7">
+    
+    
+      
+        <title>4. GitHub入門 - Dev beginner tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9d5733d3.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Inconsolata"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-purple">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#github" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="Dev beginner tutorial" class="md-header__button md-logo" aria-label="Dev beginner tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dev beginner tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4. GitHub入門
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="クリア" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sotetsuk/dev-beginner-tutorial/" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sotetsuk/dev-beginner-tutorial
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Dev beginner tutorial" class="md-nav__button md-logo" aria-label="Dev beginner tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Dev beginner tutorial
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sotetsuk/dev-beginner-tutorial/" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sotetsuk/dev-beginner-tutorial
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unix_command/" class="md-nav__link">
+        1. UNIXコマンド入門
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/" class="md-nav__link">
+        2. Python入門
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        3. Git入門
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          4. GitHub入門
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        4. GitHub入門
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    これだけ！GitHub上での開発の流れ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github_2" class="md-nav__link">
+    なぜGitHubの使い方を学ぶのか？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github_3" class="md-nav__link">
+    GitHubを用いた基本的な開発の流れ
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHubを用いた基本的な開発の流れ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue" class="md-nav__link">
+    Issueベースでのタスク管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pr" class="md-nav__link">
+    PRベースでの開発
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitgithubng" class="md-nav__link">
+    Git/GitHubでの開発におけるNG集
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    TIPS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    演習
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    最後に
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    足跡
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_practice/" class="md-nav__link">
+        5. Python総合演習
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpp/" class="md-nav__link">
+        6. C++入門
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusion/" class="md-nav__link">
+        7. おわりに
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deep_learning/" class="md-nav__link">
+        8. （補足）ディープラーニング
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    これだけ！GitHub上での開発の流れ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github_2" class="md-nav__link">
+    なぜGitHubの使い方を学ぶのか？
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github_3" class="md-nav__link">
+    GitHubを用いた基本的な開発の流れ
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHubを用いた基本的な開発の流れ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue" class="md-nav__link">
+    Issueベースでのタスク管理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pr" class="md-nav__link">
+    PRベースでの開発
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitgithubng" class="md-nav__link">
+    Git/GitHubでの開発におけるNG集
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    TIPS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    演習
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    最後に
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    足跡
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/sotetsuk/dev-beginner-tutorial/edit/master/docs/github.md" title="編集" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+
+<h1 id="github">GitHub入門</h1>
+<h2 id="github_1"><img alt="🆗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f197.svg" title=":ok:" /> これだけ！GitHub上での開発の流れ</h2>
+<p>はじめに、ここで学ぶことの結論をまとめてしまいます。GitHub上では、<strong>Issueベースでのタスク管理</strong>と、<strong>Pull Request (PR) ベースでの開発</strong>を行います。</p>
+<div class="admonition important">
+<p class="admonition-title">Issueベースでのタスク管理</p>
+<p>何か必要な機能や修正があれば、まずIssueを作成して「なぜこの機能・修正が必要なのか」「その仕様は何なのか」を書き出します。
+実際に開発に移る機能や修正は、Issueリストの中から優先順位やタスクの依存関係などに応じて決定します。</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Pull Request (PR) ベースでの開発</p>
+<ol>
+<li>実装する機能・修正の仕様を決めます（解決するIssueを決めます）。</li>
+<li><code>main</code> に移り、リモートリポジトリから最新の変更を取り込みます。 <code>git switch main &amp;&amp; git pull origin main</code></li>
+<li>新しい機能を実装するブランチを <code>main</code> から作ります。 <code>git switch -c &lt;branch name&gt;</code></li>
+<li>ブランチ上で機能を実装します。<ol>
+<li>変更を実装し、適宜コミットします。 <code>git add &lt;file&gt;</code> <code>git commit -m "&lt;commit message&gt;"</code></li>
+<li>適宜プッシュします。 <code>git push -u origin &lt;branch name&gt;</code> 特に、最初のコミット直後には一度プッシュしてPRを作り、Issueと関連付けます。</li>
+</ol>
+</li>
+<li>機能が完成したら、レビュー前に最新の <code>origin/main</code> を取り込みます。 <code>git fetch &amp;&amp; git merge --no-ff origin/main</code> （競合が発生した場合はここで解決する）</li>
+<li>他のメンバーにPRがマージ可能な状態であることを伝えます（レビューリクエストを送ったり、コメントにその旨を書き込む）</li>
+<li>必要な自他からのレビューを経て、PRを <code>main</code> に "Squash And Merge" でマージします。</li>
+</ol>
+<div class="admonition warning">
+<p>ここでは、他ユーザーのリポジトリを<a href="https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork">ForkするタイプのPR</a>ではなく、同じリポジトリを共有してその中だけで完結するPRを想定しています。</p>
+</div>
+</div>
+<h2 id="github_2"><img alt="❓" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2753.svg" title=":question:" /> なぜGitHubの使い方を学ぶのか？</h2>
+<p>GitHubは、最も広く使われているソフトウェア開発のプラットフォームです。
+前章で学んだGitのリポジトリを管理してくれる他、開発に必要な様々な便利な機能を提供してくれています。
+多くのソフトウェアがGitHub上でオープンソースソフトウェア（OSS) として開発されており、
+開発者がGitHub上で開発されたソフトウェアを使わない日はありません。
+大学でも会社でも、チームでの開発においてGitHubを使う可能性はかなり高く、Gitに加えてGitHubの使い方を習得するのは現代エンジニアにとって必須だと言えます。</p>
+<h2 id="github_3"><img alt="📙" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4d9.svg" title=":orange_book:" /> GitHubを用いた基本的な開発の流れ</h2>
+<p>Git/GitHubを用いた開発フローに、何か一つの正解があるというわけではありません。
+チームやプロジェクト毎に、それぞれの異なる開発フローやルールが存在するでしょう。
+ただし、基本的な開発フローを一つ学べば、プロジェクトやチームに加わったあとですぐにキャッチアップできるはずです。
+ここでは、シンプルかつよく知られたGit/GitHub上での開発フローである、GitHub Flowを参考に、GitHub上でのシンプルな開発の流れについて説明します。</p>
+<div class="admonition quote">
+<p><a href="http://scottchacon.com/2011/08/31/github-flow.html">GitHub Flow</a> [<a href="https://gist.github.com/Gab-km/3705015">日本語訳</a>]</p>
+</div>
+<h3 id="issue"><img alt="▶" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/25b6.svg" title=":arrow_forward:" /> Issueベースでのタスク管理</h3>
+<p>何か必要な機能や修正がある場合、まず、新しいIssueを作ります。
+Issueには、</p>
+<ol>
+<li>一体どんな新しい機能・修正が必要なのか</li>
+<li>なぜそれが必要なのか</li>
+</ol>
+<p>などを書くと良いでしょう（チームやプロジェクトによって、書くべき項目がより細かく決まっている場合もあります）。
+まずIssueに書くことによって、思いついた機能や修正をやみくもに思いついた順番に実装していくのではなく、
+タスクを整理してから優先順位やタスクの依存関係などに応じて実装していくことが可能になります。</p>
+<table>
+<thead>
+<tr>
+<th align="center"><a href="https://github.com/sotetsuk/dev-beginner-tutorial/issues/new">新しいIssueを作成する</a></th>
+<th align="center"><a href="https://github.com/sotetsuk/dev-beginner-tutorial/issues">投稿された未解決のIssueリスト</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="issue new" src="../assets/issue-new.png" /></td>
+<td align="center"><img alt="issue list" src="../assets/issue-list.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pr"><img alt="▶" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/25b6.svg" title=":arrow_forward:" /> PRベースでの開発</h3>
+<p>GitHub Flowでは、デフォルトブランチである <code>main</code> ブランチを<strong>常に最新で問題がない（テストが通る）状態に保ち</strong>、
+すべての新しい機能追加・修正を <code>main</code> ブランチから新しくブランチを派生させることで実装していきます。
+Issueの中から、解決すべきIssueを決め、何を実装すべきかが定まったら、まず <code>main</code> ブランチから新しいブランチを作成しましょう。</p>
+<p>まず、 <code>main</code> ブランチに移り、リモートブランチから最新の情報を取り込みます。</p>
+<div class="codehilite"><pre><span></span><code>$ git switch main
+$ git pull origin main
+</code></pre></div>
+
+<p>更新できたら、実装をしていくブランチを新しく作ります。</p>
+<div class="codehilite"><pre><span></span><code>$ git switch -c &lt;new-branch-name&gt;
+</code></pre></div>
+
+<p>ここで、ブランチ名はある程度、実装する機能や修正の内容がわかるよう心がけましょう。</p>
+<p>ブランチを切ったら、そこで実装をして、こまめにコミットをしていきます。コミットメッセージもある程度、
+どんな実装をしたのか分かるようにしていきましょう。</p>
+<div class="codehilite"><pre><span></span><code>$ git add &lt;file&gt;
+$ git commit -m <span class="s2">&quot;&lt;commit message&gt;&quot;</span>
+</code></pre></div>
+
+<p><strong>最初のコミットの直後に</strong>、ブランチをプッシュしてPull Request (PR) を作り、他のチームメンバに自分がどんなタスクに着手したのかを共有し、議論可能にします。</p>
+<div class="codehilite"><pre><span></span><code>$ git push -u origin &lt;new-branch-name&gt;
+</code></pre></div>
+
+<p>PRの作成は、ブランチのプッシュ後、GitHubのサイトから行うことができます。
+PRの作成時には、タイトルと本文を入力します。
+タイトルは一言でどんなことをしたのか、本文は（もしあれば）関連するIssueや、その実装方法（解決方法）などについて言及しましょう。
+下の例では、<a href="https://github.com/sotetsuk/dev-beginner-tutorial/pull/52">#52</a>のPRを新しく作成し、右図で言及されている<a href="https://github.com/sotetsuk/dev-beginner-tutorial/issues/46">#46</a>のIssueを解決します。</p>
+<table>
+<thead>
+<tr>
+<th align="center"><a href="https://github.com/sotetsuk/dev-beginner-tutorial/compare">新しいPRを作成する</a></th>
+<th align="center"><a href="https://github.com/sotetsuk/dev-beginner-tutorial/pull/52">作成されたPR</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="pr new" src="../assets/pr-new.png" /></td>
+<td align="center"><img alt="pr" src="../assets/pr.png" /></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p>GitHub上では、<a href="https://github.com/sotetsuk/dev-beginner-tutorial/issues/46">#46</a>や<a href="https://github.com/sotetsuk/dev-beginner-tutorial/pull/52">#52</a>のように、IssueやPRが#付きの連番で管理されています。</p>
+</div>
+<div class="admonition warning">
+<p>GitHub上では、PRからIssueを関連付けすることができます（<a href="https://docs.github.com/ja/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue">プルリクエストをIssueにリンクする | GitHub Docs</a>）。
+特に、<code>resolves</code> や <code>fix</code> といったキーワードを付けることで、そのPRがマージされたときに自動でIssueを閉じることができます。</p>
+</div>
+<p>機能が完成したと思ったら、まず、このブランチに最新の <code>main</code> の更新を取り込みます。
+あなたが機能を実装している間に、他の誰かが新しい機能を <code>main</code> ブランチに実装し、それが競合しているかもしれないからです。</p>
+<div class="codehilite"><pre><span></span><code>$ git fetch <span class="o">&amp;&amp;</span> git merge --no-ff origin/main
+</code></pre></div>
+
+<p>次に、そのプロジェクトで設定されている自動テストがきちんと通ることを確認します（<a href="https://ja.wikipedia.org/wiki/%E7%B6%99%E7%B6%9A%E7%9A%84%E3%82%A4%E3%83%B3%E3%83%86%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3#:~:text=%E7%B6%99%E7%B6%9A%E7%9A%84%E3%82%A4%E3%83%B3%E3%83%86%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%81CI%EF%BC%88%E8%8B%B1,%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%A7%E3%81%82%E3%82%8B%E3%80%82">継続的インテグレーション</a>）。</p>
+<div class="admonition warning">
+<p>継続的インテグレーション (CI) の設定方法は次章で学びます。</p>
+</div>
+<p>テストが通ったら、チーム開発であれば他のメンバにレビューをお願いし、レビューが通ったらマージをします（あるいは他のメンバにマージしてもらいます）。</p>
+<table>
+<thead>
+<tr>
+<th align="center">レビュアをアサインする</th>
+<th align="center">PRをマージする</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="review" src="../assets/review.png" /></td>
+<td align="center"><img alt="merge" src="../assets/merge.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>これが、新しい機能の追加・修正における一回のサイクルになります。
+このサイクルさえ覚えてしまえば、あとは同じことを繰り返すだけになります。</p>
+<h2 id="gitgithubng"><img alt="👮" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f46e.svg" title=":police_officer:" /> Git/GitHubでの開発におけるNG集</h2>
+<p>初学者がやりがちな、Git/GitHub上での開発におけるNGな行為を上げておきます。</p>
+<div class="admonition failure">
+<p class="admonition-title">一つのPRに大量の変更を詰め込みすぎない</p>
+<p>GitHub上での開発履歴を後から見直したとき、PRは開発における意味のあるまとまりの最小単位と捉えることができます。
+ひとつひとつのPRは、理想的にはレビューしやすく、手戻りも容易であるのが好ましいはずです。
+ひとつのPRで、いきなり数百行もの変更を送りつけるのはやめましょう。
+ひとつのPRは、ひとつの課題 (Issue) を解決することにだけ注力すべきです。
+変更行数が少ない分には全く問題がないので（たとえ一行だけの変更でも）、変更が大きくなりすぎないようにだけ注意しましょう。</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">大量のバイナリファイルをコミットしない</p>
+<p>Gitは基本的に、テキストファイルをバージョン管理するためのツールです。
+バイナリファイルを追加しても、差分を確認することはできません。
+例えば、ビルドしたバイナリを丸ごとコミットするようなことは避けましょう。
+これは、初学者が <code>git add *</code> を不用意に使うことで起こることがあります。
+不用意な <code>git add *</code> の使用は避け、適切に <code>.gitignore</code> を設定しましょう。
+バイナリをコミットする代わりに、ビルドを自動化するためのCIを設定しましょう。
+もしバイナリを例外的にコミットする場合、その意図を明確に記述しましょう。</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">mainブランチにforce pushしない</p>
+<p>これはリポジトリ管理者が不可能なように設定しておくべき項目でもありますが、
+<code>main</code> ブランチでの履歴の改変は好ましくありません。特にチームでの開発では避けましょう。</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">ブランチの再利用をしない</p>
+<p>ある機能Aのために切って、既に <code>main</code> にマージされたブランチAを、全く別の機能Bのためにそのまま再利用するのはやめましょう。
+かならず最新の <code>main</code> から新しいブランチBを切って下さい。</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">ビルドやテストが通ってないブランチを <code>main</code> にマージしようとしない</p>
+<p>基本的に、 <code>main</code> ブランチは常にテストが全て通った状態を保つようにしなければなりません。
+機能開発が終わった時点で、ビルドが通っていなかったり、テストが通っていない場合は、
+レビュアーのアサインの前に、実装を修正しましょう。</p>
+</div>
+<h2 id="tips"><img alt="📖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4d6.svg" title=":book:" /> TIPS</h2>
+<p>絶対にこうした方がいい、というわけではないが、一定の利便性と合理性がある項目について説明します。</p>
+<div class="admonition tip">
+<p class="admonition-title">コミットメッセージにpefixをつける</p>
+<p>コミットメッセージの先頭に次のようなprefixを加えることで視認性が高まることが期待できます。</p>
+<ul>
+<li><code>feat:</code></li>
+<li><code>fix:</code></li>
+<li><code>refactor:</code></li>
+<li><code>docs:</code></li>
+</ul>
+<blockquote>
+<p><a href="https://qiita.com/numanomanu/items/45dd285b286a1f7280ed">【今日からできる】コミットメッセージに 「プレフィックス」 をつけるだけで、開発効率が上がった話 | Qiita</a></p>
+</blockquote>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">PRのマージを <code>Squash and merge</code> にする</p>
+<p>GitHubにおける開発でPRが機能追加・変更の最小単位であることを踏まえると、 <code>main</code> にマージする際、PRに紐付いたコミットを全てsquashしてひとつのマージコミットを作るのも合理的な選択の一つです。
+こうすると、後から <code>main</code> ブランチの履歴を見たとき、全ての変更にPRがひとつ紐付いており、そこからさらにIssueに辿りやすくなっているというメリットがあります。
+また、ひとつひとつのcommit messageは <code>main</code> の履歴には映らなくなるので、はそこまで気を使う必要がなくなるというのも利点です。
+実際、いくつかの有名OSSはこの方針を採用しています。</p>
+<div class="admonition example">
+<ul>
+<li><a href="https://github.com/denoland/deno">github.com/denoland/deno</a></li>
+<li><a href="https://github.com/pytorch/pytorch">github.com/pytorch/pytorch</a></li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th align="center">"Squash and merge" ボタン</th>
+<th align="center"><a href="https://github.com/denoland/deno/commits/master">github.com/denoland/deno</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="squash-merge" src="../assets/squash-merge.png" /></td>
+<td align="center"><img alt="deno" src="../assets/deno.png" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">ブランチ名に作業者の名前や変更の種類を先頭につける</p>
+<p>誰がどんな変更を加えているブランチなのかの視認性が少し良くなります。</p>
+<ul>
+<li><code>sotetsuk/feat/new-nn-model</code></li>
+<li><code>sotetsuk/refactor/remove-comments</code></li>
+<li><code>sotetsuk/docs/how-to-use</code></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">まだ実装途中のPRにWIPとprefixをつけたり、Draft Pull Requestにする</p>
+<p>まだPRの実装が完了していないことを明示的にするために、タイトルに <code>[WIP]</code> や　<code>WIP:</code> のようなprefixをつける慣習があります。
+また、代わりにGitHubのDraft Pull Request機能を使うこともできます（公開リポジトリやPROユーザーの場合）。
+これによって、他の開発メンバーが、そのPRはまだレビューやマージの必要がないことを素早く判断できます。
+ただし、実装が完了したあとにレビュアーをアサインするようにしている場合、必須の慣習ではないと思いますが、明示的にしたい場合は良いかもしれません。
+タイトルにprefixを付ける場合は、外し忘れに注意しましょう。</p>
+<blockquote>
+<p><a href="https://github.blog/jp/2019-02-19-introducing-draft-pull-requests/">Draft Pull Requestをリリースしました | GitHubブログ</a></p>
+</blockquote>
+</div>
+<h2 id="_1"><img alt="📝" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4dd.svg" title=":pencil:" /> 演習</h2>
+<p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> 自分でGitHubでリポジトリを作ってみて、IssueやPRを作ってみましょう。</p>
+<div class="admonition quote">
+<p><a href="https://docs.github.com/ja/free-pro-team@latest/github/getting-started-with-github/create-a-repo">リポジトリを作成する | GitHub Docs</a></p>
+</div>
+<p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> このドキュメント自体もGitHub上で書かれています。 
+このドキュメントのリポジトリに、実際にPRを作成して送ってみましょう。
+練習として、このページの一番下の「足跡」に自分のGitHubのアイコンを追加するような変更をして、PRを送ってみましょう。
+@sotetsukにこのリポジトリのcollaboratorに追加してもらうか、このリポジトリを<a href="https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork">ForkしてPR</a>を送って見て下さい。@sotetsukと面識がなくても気にせず送ってもらって構いません。</p>
+<div class="admonition important">
+<p class="admonition-title">このドキュメントのGitHubリポジトリ</p>
+<p><a href="https://github.com/sotetsuk/dev-beginner-tutorial">github.com/sotetsuk/dev-beginner-tutorial</a></p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">GitHubの操作方法</p>
+<ul>
+<li><a href="https://docs.github.com/ja/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository">リポジトリをクローンする | GitHub Docs</a></li>
+<li><a href="https://docs.github.com/ja/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork">フォークからプルリクエストを作成する | GitHub Docs</a></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>PRのマージはリポジトリ管理者にレビューをお願いしてからにしましょう。</p>
+</div>
+<p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> また、このチュートリアル自体のコンテンツについても修正点を考えてIssueやPRを送ってみましょう。
+例えば、次のようなPRを送ってみて下さい。</p>
+<div class="admonition example">
+<ol>
+<li>タイポをIssueで報告する and/or PRで修正する。</li>
+<li>表記ゆれをIssueで報告する and/or PRで修正する。</li>
+<li>不正確・誤っている説明をIssueで報告する and/or PRで修正する。</li>
+<li>要望・改善案をIssueで報告する。</li>
+</ol>
+</div>
+<p><img alt="✅" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2705.svg" title=":white_check_mark:" /> GitHubでは、気に入ったリポジトリやプロジェクトにスターを付けることで、そのプロジェクトを応援することができます。このチュートリアルのリポジトリにスターを付けてみましょう。</p>
+<h2 id="_2"><img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /> 最後に</h2>
+<p>ここで書いたGitHubの運用方法は、世の中の運用方法の中でも、かなりシンプルな部類のものだと思います。
+ただ、初学者の方にとってはまどろっこしく面倒なやり方に感じられるかもしれません。
+特に、一人で開発しているうちは、常に <code>main</code> ブランチで、<code>git add/commit</code> と <code>git push origin master</code> を繰り返す方が楽に感じられるかもしれません。
+実際、一人だけの小規模開発の序盤は、その方が勢いがでるという側面も否定できないと思いますし、その開発手順で問題ないと思います。
+一人だけの開発でも、リポジトリがある程度習熟してくると、ここで書いたようなPRを使った開発が便利になってきますが、<strong>あくまで適材適所</strong>で合理的な運用ができるようにしましょう。</p>
+<h2 id="_3"><img alt="👣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f463.svg" title=":footprints:" /> 足跡</h2>
+<p><a href="https://github.com/sotetsuk"><img src="https://github.com/sotetsuk.png" height="auto" width="50" style="border-radius:50%"></a>
+<a href="https://github.com/pyopyai"><img src="https://github.com/pyopyai.png" height="auto" width="50" style="border-radius:50%"></a>
+<a href="https://github.com/Hisokalalala"><img src="https://github.com/Hisokalalala.png" height="auto" width="50" style="border-radius:50%"></a>
+<a href="https://github.com/OkanoShinri"><img src="https://github.com/OkanoShinri.png" height="auto" width="50" style="border-radius:50%"></a>
+<a href="https://github.com/youyou-ku"><img src="https://github.com/youyou-ku.png" height="auto" width="50" style="border-radius:50%"></a>
+<a href="https://github.com/SoilWell316p"><img src="https://github.com/SoilWell316p.png" height="auto" width="50" style="border-radius:50%"></a>
+<a href="https://github.com/Ma-tsu-o-ka-K"><img src="https://github.com/Ma-tsu-o-ka-K.png" height="auto" width="50" style="border-radius:50%"></a>
+<a href="https://github.com/kitaikehiroaki"><img src="https://github.com/kitaikehiroaki.png" height="auto" width="50" style="border-radius:50%"></a>
+<a href="https://github.com/yufranc"><img src="https://github.com/yufranc.png" height="auto" width="50" style="border-radius:50%"></a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="フッター">
+      
+        
+        <a href="../git/" class="md-footer__link md-footer__link--prev" aria-label="前: 3. Git入門" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                前
+              </span>
+              3. Git入門
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../python_practice/" class="md-footer__link md-footer__link--next" aria-label="次: 5. Python総合演習" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                次
+              </span>
+              5. Python総合演習
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy 2020 Sotetsu KOYAMADA
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.5e67fbfe.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e87a5f81.min.js"></script>
+      
+    
+  </body>
+</html>
