@@ -283,3 +283,5 @@ $ git fetch && git merge --no-ff origin/main
 <a href="https://github.com/SoilWell316p"><img src="https://github.com/SoilWell316p.png" height="auto" width="50" style="border-radius:50%"></a>
 <a href="https://github.com/Ma-tsu-o-ka-K"><img src="https://github.com/Ma-tsu-o-ka-K.png" height="auto" width="50" style="border-radius:50%"></a>
 <a href="https://github.com/kitaikehiroaki"><img src="https://github.com/kitaikehiroaki.png" height="auto" width="50" style="border-radius:50%"></a>
+<a href="https://github.com/yufranc"><img src="https://github.com/yufranc.png" height="auto" width="50" style="border-radius:50%"></a>
+
