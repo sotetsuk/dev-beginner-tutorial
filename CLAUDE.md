@@ -10,9 +10,9 @@ This is a beginner development tutorial website built with MkDocs Material. The 
 
 ### Local Development
 ```bash
-# Start local server with auto-refresh (requires Docker)
+# Start local server with auto-refresh (uses uvx to run mkdocs-material)
 ./serve.sh
-# Server runs at http://0.0.0.0:8000/
+# Server runs at http://127.0.0.1:8000/
 ```
 
 ### Build & Deploy
@@ -27,7 +27,7 @@ mkdocs gh-deploy --force
 ## Architecture
 
 - **MkDocs Material**: Static site generator for documentation
-- **Docker**: Used for local development environment via `serve.sh`
+- **uvx**: Tool runner from uv, used to run mkdocs-material without project setup
 - **GitHub Actions**: Automatic deployment to GitHub Pages on push to main branch
 - **Content Structure**: Tutorial pages in `docs/` directory, each covering different development topics
 - **Configuration**: Site settings in `mkdocs.yml` including navigation, theme, and markdown extensions

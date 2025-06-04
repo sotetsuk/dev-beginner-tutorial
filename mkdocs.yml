@@ -21,12 +21,29 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
-    scheme: slate
-    primary: teal
-    accent: deep purple
+    - scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   font:
-    text: Noto Sans
-    code: Inconsolata
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
 markdown_extensions:
   - admonition
   - pymdownx.tabbed
