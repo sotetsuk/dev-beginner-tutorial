@@ -2,7 +2,7 @@
 
 # Dev beginner tutorial
 
-https://sotets.uk/dev-beginner-tutorial
+https://sotetsuk.github.io/dev-beginner-tutorial
 
 
 ## 使い方
